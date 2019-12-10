@@ -26,7 +26,7 @@ namespace AAS_Modeling
             return new TableAsset<SensorData>
             {
                 IRAI = Helper.GenerateSampleIrai("Machine 32A - Pressure Plate Sensor", "001"),
-                AssetCategory = AssetCategory.Files,
+                AssetCategory = AssetCategory.TableValue,
                 Created = DateTime.Now,
                 LastUpdated = DateTime.Now,
                 FullName = "Machine 32A - Pressure Plate Sensor",
