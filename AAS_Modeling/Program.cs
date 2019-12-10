@@ -20,7 +20,8 @@ namespace AAS_Modeling
                 BrokerMeta = new BrokerMeta()
             };
 
-            System.IO.File.WriteAllText(@"Meta.json", JsonConvert.SerializeObject(sample, Formatting.Indented));
+            var jsonString = JsonConvert.SerializeObject(sample, Formatting.Indented);
+            System.IO.File.WriteAllText(@"Meta.json", jsonString);
 
             TableAsset<SensorData> sensorData = new TableAsset<SensorData>
             {
@@ -101,6 +102,9 @@ namespace AAS_Modeling
             };
 
             System.IO.File.WriteAllText(@"Single.json", JsonConvert.SerializeObject(machineData, Formatting.Indented));
+
+            //for donovan
+            BaseAsset sampleObject = JsonConvert.DeserializeObject<BaseAsset>(jsonString);
             Console.WriteLine("done");
         }
 
