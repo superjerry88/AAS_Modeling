@@ -14,6 +14,7 @@ namespace AAS_Modeling
 
             System.IO.File.WriteAllText(@"Single.json", JsonConvert.SerializeObject(Helper.CreateSingleAsset(), Formatting.Indented));
 
+            System.IO.File.WriteAllText(@"File.json", JsonConvert.SerializeObject(Helper.CreateFileAsset(), Formatting.Indented));
         }
     }
 

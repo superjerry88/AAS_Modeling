@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
+using System.IO;
 
 namespace AAS_Modeling
 {
@@ -151,6 +152,38 @@ namespace AAS_Modeling
                 ZipCode = zip,
                 Lontitude = longtitude,
                 Latitude = latitude
+            };
+        }
+
+        public static FileAsset CreateFileAsset()
+        {
+            return new FileAsset
+            {
+                IRAI = Helper.GenerateSampleIrai("Machine 32A - Pressure Plate Sensor", "001"),
+                AssetCategory = AssetCategory.Files,
+                Created = DateTime.Now,
+                LastUpdated = DateTime.Now,
+                FullName = "Machine 32A - Pressure Plate Sensor",
+                Description =
+                    @"The JP series pressure transducers are highly cost-effective and suitable low cost, high volume commercial and industrial applications. This series are all MEMS technologies, compensated with digital ASIC. EMI/RFI circuit is built incompact laser welded stainless steel case to supply highly accurate,reliable,and stable output for limit installation space.This product is geared to the OEM customer using medium to high volumes with optional pressure ports and electrical connections.The standard version is suitable for many, but applications the dedicated design team stands ready to provide a custom design where the volume and application warrants.",
+                BrokerMeta = new BrokerMeta(),
+                Files = new List<FileMeta>
+                {
+                    new FileMeta
+                    {
+                        FileName = "Meta Asset File",
+                        FilePath = "Meta.json",
+                        FileInfo = new FileInfo("Meta.json"),
+                        FileDescription = "A sample file that display metadata in JSON format"
+                    },
+                    new FileMeta
+                    {
+                        FileName = "Single Asset File",
+                        FilePath = "Single.json",
+                        FileInfo = new FileInfo("Single.json"),
+                        FileDescription = "A sample file that display metadata in Single Asset format"
+                    }
+                }
             };
         }
 
