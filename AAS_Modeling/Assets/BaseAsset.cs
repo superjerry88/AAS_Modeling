@@ -1,10 +1,14 @@
 ﻿using System;
 using System.IO;
 using System.Text;
+using MongoDB.Bson.Serialization.Attributes;
+using MongoDB.Driver;
 using Newtonsoft.Json;
 
 namespace AAS_Modeling
 {
+    
+    [BsonIgnoreExtraElements]
     public class BaseAsset
     {
         public IRAI IRAI { get; set; }
@@ -16,6 +20,7 @@ namespace AAS_Modeling
         public DateTime Created { get; set; }
     }
 
+    
     public class FileMeta
     {
         public string FileName { get; set; }
