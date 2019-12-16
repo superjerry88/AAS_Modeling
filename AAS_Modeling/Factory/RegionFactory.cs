@@ -9,7 +9,7 @@ namespace AAS_Modeling.Factory
 {
     class RegionFactory
     {
-        public List<RegionInfo> GetAllRegionInfos()
+        public static List<RegionInfo> GetAllRegionInfos()
         {
             // todo Note: There should be 191 country in the world but this only generate 138 + 3. Please find out why. 
 
@@ -20,7 +20,6 @@ namespace AAS_Modeling.Factory
                 .DistinctBy(region => region.Name) // Remove repeated country
                 .OrderBy(region => region.TwoLetterISORegionName)// Sort country
                 .ToList();// convert to list
-
         }
     }
 }

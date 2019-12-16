@@ -7,7 +7,7 @@ namespace AAS_Modeling.Factory
 {
     class AssetOwnerFactory
     {
-        public List<AssetOwner> GenerateAssetOwners()
+        public static List<AssetOwner> GenerateAssetOwners()
         {
             return new List<AssetOwner>
             {

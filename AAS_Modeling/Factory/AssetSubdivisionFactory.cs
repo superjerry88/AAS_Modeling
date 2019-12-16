@@ -7,7 +7,7 @@ namespace AAS_Modeling.Factory
 {
     class AssetSubdivisionFactory
     {
-        public List<AssetSubdivision> GenerAssetSubdivisions()
+        public static List<AssetSubdivision> GenerAssetSubdivisions()
         {
             return new List<AssetSubdivision>
             {

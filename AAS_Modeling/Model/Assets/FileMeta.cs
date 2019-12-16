@@ -1,9 +1,11 @@
 ﻿using System;
 using System.IO;
+using MongoDB.Bson.Serialization.Attributes;
 using Newtonsoft.Json;
 
 namespace AAS_Modeling.Model.Assets
 {
+    [BsonIgnoreExtraElements]
     public class FileMeta
     {
         public string FileName { get; set; }

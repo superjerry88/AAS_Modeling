@@ -7,7 +7,7 @@ namespace AAS_Modeling.Factory
 {
     class AssetDimensionFactory
     {
-        public List<AssetDimension> GenerateDimensions()
+        public static List<AssetDimension> GenerateDimensions()
         {
             return new List<AssetDimension>
             {
