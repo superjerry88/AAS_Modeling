@@ -11,14 +11,26 @@ namespace AAS_Modeling.Model.Assets
         public string FileName { get; set; }
         public string FileDescription { get; set; }
         public string FilePath { get; set; }
-        [JsonIgnore]
-        public FileInfo FileInfo { get; set; }
+        public string FileExtention { get; set; }
+        public string FileFullName { get; set; }
+        public long FileLength { get; set; }
 
-        public string FileExtention => FileInfo.Extension;
-        public string FileFullName => FileInfo.FullName;
-        public long FileLength => FileInfo.Length;
-        public DateTime FileCreationTimeUtc => FileInfo.CreationTimeUtc;
-        public DateTime FileLastAccessTimeUtc => FileInfo.LastAccessTimeUtc;
-        public DateTime FileLastWriteTimeUtc => FileInfo.LastWriteTimeUtc;
+        public DateTime FileCreationTimeUtc { get; set; }
+        public DateTime FileLastAccessTimeUtc { get; set; }
+        public DateTime FileLastWriteTimeUtc { get; set; }
+
+        public FileMeta(FileInfo fileInfo)
+        {
+            FileExtention = fileInfo.Extension;
+            FileFullName = fileInfo.FullName;
+            FileLength = fileInfo.Length;
+            FileCreationTimeUtc = FileCreationTimeUtc;
+            FileLastAccessTimeUtc = FileLastAccessTimeUtc;
+            FileLastWriteTimeUtc = FileLastWriteTimeUtc;
+        }
+
+        public FileMeta()
+        {
+        }
     }
 }

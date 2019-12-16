@@ -43,9 +43,9 @@ namespace AAS_Modeling
             };
         }
 
-        public static SingleAsset<Specification> CreateSingleAsset()
+        public static SingleAsset<WaterTankGeneratorSpec> CreateSingleAsset()
         {
-            return new SingleAsset<Specification>
+            return new SingleAsset<WaterTankGeneratorSpec>
             {
                 Irai = Helper.GenerateSampleIrai("Machine 32A - Pressure Plate Sensor", "001"),
                 AssetCategory = AssetCategory.Files,
@@ -60,17 +60,17 @@ namespace AAS_Modeling
                     new DataModel
                     {
                         Language = "C#",
-                        Model = @"    public class Specification
+                        Model = @"    public class WaterTankGeneratorSpec
     {
-        public Property Width;
-        public Property Length;
-        public Property Weight;
-        public Property Capacity;
-        public Property PowerCapacity;
-        public Property ManufacturingDate;
+        public AssetProperty Width;
+        public AssetProperty Length;
+        public AssetProperty Weight;
+        public AssetProperty Capacity;
+        public AssetProperty PowerCapacity;
+        public AssetProperty ManufacturingDate;
     }
 
-    public class Property
+    public class AssetProperty
     {
         public string Name;
         public string Description;
@@ -82,9 +82,9 @@ namespace AAS_Modeling
                     }
                 },
                 HasDataModel = true,
-                Value = new Specification
+                Value = new WaterTankGeneratorSpec
                 {
-                    Capacity = new Property
+                    Capacity = new AssetProperty
                     {
                         Value = 450000.0,
                         Unit = "ml",
@@ -93,7 +93,7 @@ namespace AAS_Modeling
                         HasNumericValue = true,
                         Name = "Capacity"
                     },
-                    Length = new Property
+                    Length = new AssetProperty
                     {
                         Value = 12.455,
                         Unit = "meter",
@@ -102,7 +102,7 @@ namespace AAS_Modeling
                         HasNumericValue = true,
                         Name = "Length"
                     },
-                    Width = new Property
+                    Width = new AssetProperty
                     {
                         Value = 4.455,
                         Unit = "meter",
@@ -111,7 +111,7 @@ namespace AAS_Modeling
                         HasNumericValue = true,
                         Name = "Width"
                     },
-                    Weight = new Property
+                    Weight = new AssetProperty
                     {
                         Value = 1245.36,
                         Unit = "Kg",
@@ -120,7 +120,7 @@ namespace AAS_Modeling
                         HasNumericValue = true,
                         Name = "Weight"
                     },
-                    PowerCapacity = new Property
+                    PowerCapacity = new AssetProperty
                     {
                         Value = 200,
                         Unit = "Kw/H",
@@ -129,7 +129,7 @@ namespace AAS_Modeling
                         HasNumericValue = true,
                         Name = "Power Capacity"
                     },
-                    ManufacturingDate = new Property
+                    ManufacturingDate = new AssetProperty
                     {
                         Value = "2009-08-02",
                         Description = "The manufacturing date of the machine",

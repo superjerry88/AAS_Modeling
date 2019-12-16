@@ -11,12 +11,12 @@ namespace AAS_Modeling
     {
         static void Main(string[] args)
         {
-            foreach (var region in new RegionFactory().GetAllRegionInfos())
+            foreach (var region in RegionFactory.GetAllRegionInfos())
             {
                 Console.WriteLine($"[{region.TwoLetterISORegionName}] - {region.EnglishName}");
             }
 
-            Console.WriteLine($"Total country: {new RegionFactory().GetAllRegionInfos().Count}");
+            Console.WriteLine($"Total country: {RegionFactory.GetAllRegionInfos().Count}");
 
             Console.Read();
         }
@@ -31,31 +31,5 @@ namespace AAS_Modeling
 
             File.WriteAllText(@"File.json", JsonConvert.SerializeObject(Helper.CreateFileAsset(), Formatting.Indented));
         }
-    }
-
-    public class SensorData
-    {
-        public DateTime Time;
-        public double Value;
-    }
-
-    public class Specification
-    {
-        public Property Width;
-        public Property Length;
-        public Property Weight;
-        public Property Capacity;
-        public Property PowerCapacity;
-        public Property ManufacturingDate;
-    }
-
-    public class Property
-    {
-        public string Name;
-        public string Description;
-        public bool HasUnit;
-        public string Unit;
-        public bool HasNumericValue;
-        public object Value;
     }
 }

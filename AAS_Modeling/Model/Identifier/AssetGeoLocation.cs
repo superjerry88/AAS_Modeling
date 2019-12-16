@@ -1,4 +1,6 @@
-﻿namespace AAS_Modeling.Model.Identifier
+﻿using System.Globalization;
+
+namespace AAS_Modeling.Model.Identifier
 {
     public class AssetGeoLocation
     {
@@ -10,5 +12,11 @@
         public string WorldZipCode { get; set; }
         public string Lontitude { get; set; }
         public string Latitude { get; set; }
+
+        public AssetGeoLocation(RegionInfo region)
+        {
+            CountryCode = region.TwoLetterISORegionName;
+            CountryFullName = region.EnglishName;
+        }
     }
 }
