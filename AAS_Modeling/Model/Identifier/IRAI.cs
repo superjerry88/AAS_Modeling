@@ -2,7 +2,7 @@
 
 namespace AAS_Modeling.Model.Identifier
 {
-    public class IRAI
+    public class Irai
     {
         public string FullCode =>
             $"0990-{AssetGeoLocation.IraiCode}{Subdivision.IraiCode}{AssetOrganization.IraiCode}-{Owner.IraiCode}#{Dimension.IraiCode}-{AssetCode.IraiCode}#{LastestVersion.IraiCode}";

@@ -6,7 +6,7 @@ namespace AAS_Modeling.Model.Assets
 {
     public class BaseAsset
     {
-        public IRAI IRAI { get; set; }
+        public Irai Irai { get; set; }
         public string FullName { get; set; }
         public string Description { get; set; }
         public AssetCategory AssetCategory { get; set; }

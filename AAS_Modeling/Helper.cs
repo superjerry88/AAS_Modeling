@@ -14,7 +14,7 @@ namespace AAS_Modeling
         {
             return new BaseAsset
             {
-                IRAI = Helper.GenerateSampleIrai("Machine 32A - Pressure Plate Sensor", "001"),
+                Irai = Helper.GenerateSampleIrai("Machine 32A - Pressure Plate Sensor", "001"),
                 AssetCategory = AssetCategory.Files,
                 Created = DateTime.Now,
                 LastUpdated = DateTime.Now,
@@ -29,7 +29,7 @@ namespace AAS_Modeling
         {
             return new TableAsset<SensorData>
             {
-                IRAI = Helper.GenerateSampleIrai("Machine 32A - Pressure Plate Sensor", "001"),
+                Irai = Helper.GenerateSampleIrai("Machine 32A - Pressure Plate Sensor", "001"),
                 AssetCategory = AssetCategory.TableValue,
                 Created = DateTime.Now,
                 LastUpdated = DateTime.Now,
@@ -47,7 +47,7 @@ namespace AAS_Modeling
         {
             return new SingleAsset<Specification>
             {
-                IRAI = Helper.GenerateSampleIrai("Machine 32A - Pressure Plate Sensor", "001"),
+                Irai = Helper.GenerateSampleIrai("Machine 32A - Pressure Plate Sensor", "001"),
                 AssetCategory = AssetCategory.Files,
                 Created = DateTime.Now,
                 LastUpdated = DateTime.Now,
@@ -162,7 +162,7 @@ namespace AAS_Modeling
         {
             return new FileAsset
             {
-                IRAI = Helper.GenerateSampleIrai("Machine 32A - Pressure Plate Sensor", "001"),
+                Irai = Helper.GenerateSampleIrai("Machine 32A - Pressure Plate Sensor", "001"),
                 AssetCategory = AssetCategory.Files,
                 Created = DateTime.Now,
                 LastUpdated = DateTime.Now,
@@ -190,9 +190,9 @@ namespace AAS_Modeling
             };
         }
 
-        public static IRAI GenerateSampleIrai(string assetName, string code)
+        public static Irai GenerateSampleIrai(string assetName, string code)
         {
-            return new IRAI
+            return new Irai
             {
                 AssetGeoLocation = CreateGeoLocation("MY","Shah Alam", "40460 ", "3.008507", "101.520867"),
                 AssetOrganization = new AssetOrganization
