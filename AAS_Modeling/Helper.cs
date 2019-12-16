@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
+using AAS_Modeling.Model.Assets;
+using AAS_Modeling.Model.Enum;
+using AAS_Modeling.Model.Identifier;
 
 namespace AAS_Modeling
 {
@@ -138,12 +141,12 @@ namespace AAS_Modeling
             };
         }
 
-        public static GeoLocation CreateGeoLocation(string countryCode, string city, string zip,string longtitude = "0.00",string latitude = "0.00")
+        public static AssetGeoLocation CreateGeoLocation(string countryCode, string city, string zip,string longtitude = "0.00",string latitude = "0.00")
         {
             var country = new RegionInfo(countryCode);
             var wZip = zip.Replace("-", "").Replace(" ","");
             wZip = wZip.PadLeft(8, '0');
-            return new GeoLocation
+            return new AssetGeoLocation
             {
                 City = city,
                 CountryCode = country.TwoLetterISORegionName,
@@ -191,8 +194,8 @@ namespace AAS_Modeling
         {
             return new IRAI
             {
-                GeoLocation = CreateGeoLocation("MY","Shah Alam", "40460 ", "3.008507", "101.520867"),
-                Organization = new Organization
+                AssetGeoLocation = CreateGeoLocation("MY","Shah Alam", "40460 ", "3.008507", "101.520867"),
+                AssetOrganization = new AssetOrganization
                 {
                     
                     IraiCode = "0001",

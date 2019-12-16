@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
+using AAS_Modeling.Model.Enum;
 
-namespace AAS_Modeling
+namespace AAS_Modeling.Model.Assets
 {
     public class SingleAsset<T> : BaseAsset
     {

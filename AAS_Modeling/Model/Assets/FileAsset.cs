@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace AAS_Modeling
+namespace AAS_Modeling.Model.Assets
 {
     public class FileAsset : BaseAsset
     {
