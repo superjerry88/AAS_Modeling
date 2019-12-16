@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using AAS_Modeling.Factory;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
@@ -9,6 +10,18 @@ namespace AAS_Modeling
     class Program
     {
         static void Main(string[] args)
+        {
+            foreach (var region in new RegionFactory().GetAllRegionInfos())
+            {
+                Console.WriteLine($"[{region.TwoLetterISORegionName}] - {region.EnglishName}");
+            }
+
+            Console.WriteLine($"Total country: {new RegionFactory().GetAllRegionInfos().Count}");
+
+            Console.Read();
+        }
+
+        static void GenerateMetaFiles()
         {
             File.WriteAllText(@"Meta.json", JsonConvert.SerializeObject(Helper.CreateBaseAsset(), Formatting.Indented));
 

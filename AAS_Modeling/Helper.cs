@@ -209,8 +209,10 @@ namespace AAS_Modeling
                 },
                 Subdivision = new AssetSubdivision
                 {
-                    IraiCode = "C18",
-                    Description = "Manufacture of metal works"
+                   SectionCode = "C",
+                   DivisionCode = "03",
+                   Section = "Manufacturing",
+                   Description = "Manufacture of metal works"
                 },
                 Dimension = new AssetDimension
                 {
