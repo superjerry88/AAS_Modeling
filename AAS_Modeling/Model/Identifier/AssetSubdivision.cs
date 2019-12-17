@@ -7,6 +7,6 @@
         public string SectionCode { get; set; }
         public string DivisionCode { get; set; }
         public string Description { get; set; }
-
+        public string GroupCode { get; set; }
+        public string GroupDescription { get; set; }
     }
-}
