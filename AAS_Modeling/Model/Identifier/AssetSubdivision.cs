@@ -10,3 +10,4 @@
         public string GroupCode { get; set; }
         public string GroupDescription { get; set; }
     }
+}
