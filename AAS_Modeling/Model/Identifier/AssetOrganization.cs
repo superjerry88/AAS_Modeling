@@ -2,7 +2,7 @@
 {
     public class AssetOrganization
     {
-        public string IraiCode { get; set; } //Organization Code
+        public string IraiCode { get; set; } //Organization UniqueCode
         public string Name { get; set; }
         public string RegistrationNumber { get; set; }
         public string IndustryCode { get; set; }

@@ -18,5 +18,17 @@ namespace AAS_Modeling.Model.Identifier
             CountryCode = region.TwoLetterISORegionName;
             CountryFullName = region.EnglishName;
         }
+
+        public AssetGeoLocation(string country, string zip,  string cityName,string longtitude = "0.00", string latitude = "0.00")
+        {
+            var region = new RegionInfo(country);
+            ZipCode = zip;
+            WorldZipCode = zip.Replace("-", "").Replace(" ", "").PadLeft(8, '0');
+            City = cityName;
+            CountryCode = region.TwoLetterISORegionName;
+            CountryFullName = region.EnglishName;
+            Lontitude = longtitude;
+            Latitude = latitude;
+        }
     }
 }

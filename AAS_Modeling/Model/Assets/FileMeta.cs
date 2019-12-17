@@ -19,14 +19,18 @@ namespace AAS_Modeling.Model.Assets
         public DateTime FileLastAccessTimeUtc { get; set; }
         public DateTime FileLastWriteTimeUtc { get; set; }
 
-        public FileMeta(FileInfo fileInfo)
+        public FileMeta(string path,string name = "", string description = "")
         {
+            var fileInfo = new FileInfo(path);
+            FilePath = path;
             FileExtention = fileInfo.Extension;
             FileFullName = fileInfo.FullName;
             FileLength = fileInfo.Length;
             FileCreationTimeUtc = FileCreationTimeUtc;
             FileLastAccessTimeUtc = FileLastAccessTimeUtc;
             FileLastWriteTimeUtc = FileLastWriteTimeUtc;
+            FileName = name;
+            FileDescription = description;
         }
 
         public FileMeta()

@@ -14,9 +14,9 @@ namespace AAS_Modeling.Factory
         private static readonly Lazy<IraiFactory> PrivateInstance = new Lazy<IraiFactory>(() => new IraiFactory());
         public static IraiFactory Instance => PrivateInstance.Value;
 
-        public List<AssetDimension> AssetDimensions { get; set; }
-        public List<AssetOwner> AssetOwners { get; set; }
-        public List<AssetSubdivision> AssetSubdivisions { get; set; }
+        public static List<AssetDimension> AssetDimensions { get; set; }
+        public static List<AssetOwner> AssetOwners { get; set; }
+        public static List<AssetSubdivision> AssetSubdivisions { get; set; }
 
         private IraiFactory()
         {
@@ -30,7 +30,7 @@ namespace AAS_Modeling.Factory
 
         }
 
-        public AssetDimension GetAssetDimension(string code)
+        public static AssetDimension GetAssetDimension(string code)
         {
             var value = AssetDimensions.FirstOrDefault(a => a.IraiCode == "code");
             if (value != null) return value;
@@ -38,7 +38,7 @@ namespace AAS_Modeling.Factory
             throw new Exception("Asset Dimension cannot be found");
         }
 
-        public AssetOwner GetAssetOwners(string code)
+        public static AssetOwner GetAssetOwners(string code)
         {
             var value = AssetOwners.FirstOrDefault(a => a.IraiCode == "code");
             if (value != null) return value;
@@ -46,7 +46,7 @@ namespace AAS_Modeling.Factory
             throw new Exception("Asset Dimension cannot be found");
         }
 
-        public AssetSubdivision GetAssetSubdivision(string code)
+        public static AssetSubdivision GetAssetSubdivision(string code)
         {
             var value = AssetSubdivisions.FirstOrDefault(a => a.IraiCode == "code");
             if (value != null) return value;

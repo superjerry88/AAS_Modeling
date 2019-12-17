@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
+using System.Linq;
+using AAS_Modeling.Factory;
 using AAS_Modeling.Model.Assets;
 using AAS_Modeling.Model.Enum;
 using AAS_Modeling.Model.Identifier;
@@ -27,20 +29,12 @@ namespace AAS_Modeling
 
         public static TableAsset<SensorData> CreateTableAsset()
         {
-            return new TableAsset<SensorData>
-            {
-                Irai = Helper.GenerateSampleIrai("Machine 32A - Pressure Plate Sensor", "001"),
-                AssetCategory = AssetCategory.TableValue,
-                Created = DateTime.Now,
-                LastUpdated = DateTime.Now,
-                FullName = "Machine 32A - Pressure Plate Sensor",
-                Description =
-                    @"The JP series pressure transducers are highly cost-effective and suitable low cost, high volume commercial and industrial applications. This series are all MEMS technologies, compensated with digital ASIC. EMI/RFI circuit is built incompact laser welded stainless steel case to supply highly accurate,reliable,and stable output for limit installation space.This product is geared to the OEM customer using medium to high volumes with optional pressure ports and electrical connections.The standard version is suitable for many, but applications the dedicated design team stands ready to provide a custom design where the volume and application warrants.",
-                BrokerMeta = new BrokerMeta(),
-                DataModels = GeneraDataModel(),
-                HasDataModel = true,
-                Values = GenerateFakeSensorData()
-            };
+            var tableAsset = (TableAsset<SensorData>) CreateBaseAsset();
+            tableAsset.DataModels = GeneraDataModel();
+            tableAsset.HasDataModel = true;
+            tableAsset.Values = GenerateFakeSensorData();
+
+            return tableAsset;
         }
 
         public static SingleAsset<WaterTankGeneratorSpec> CreateSingleAsset()
@@ -141,23 +135,6 @@ namespace AAS_Modeling
             };
         }
 
-        public static AssetGeoLocation CreateGeoLocation(string countryCode, string city, string zip,string longtitude = "0.00",string latitude = "0.00")
-        {
-            var country = new RegionInfo(countryCode);
-            var wZip = zip.Replace("-", "").Replace(" ","");
-            wZip = wZip.PadLeft(8, '0');
-            return new AssetGeoLocation
-            {
-                City = city,
-                CountryCode = country.TwoLetterISORegionName,
-                CountryFullName = country.EnglishName,
-                WorldZipCode = wZip,
-                ZipCode = zip,
-                Lontitude = longtitude,
-                Latitude = latitude
-            };
-        }
-
         public static FileAsset CreateFileAsset()
         {
             return new FileAsset
@@ -172,20 +149,8 @@ namespace AAS_Modeling
                 BrokerMeta = new BrokerMeta(),
                 Files = new List<FileMeta>
                 {
-                    new FileMeta
-                    {
-                        FileName = "Meta Asset File",
-                        FilePath = "Meta.json",
-                        FileInfo = new FileInfo("Meta.json"),
-                        FileDescription = "A sample file that display metadata in JSON format"
-                    },
-                    new FileMeta
-                    {
-                        FileName = "Single Asset File",
-                        FilePath = "Single.json",
-                        FileInfo = new FileInfo("Single.json"),
-                        FileDescription = "A sample file that display metadata in Single Asset format"
-                    }
+                    new FileMeta("Meta.json","Meta Asset File","A sample file that display metadata in JSON format"),
+                    new FileMeta("Single.json","Single Asset File", "A sample file that display metadata in Single Asset format" )
                 }
             };
         }
@@ -194,7 +159,7 @@ namespace AAS_Modeling
         {
             return new Irai
             {
-                AssetGeoLocation = CreateGeoLocation("MY","Shah Alam", "40460 ", "3.008507", "101.520867"),
+                AssetGeoLocation = new AssetGeoLocation("MY","Shah Alam", "40460 ", "3.008507", "101.520867"),
                 AssetOrganization = new AssetOrganization
                 {
                     
@@ -207,32 +172,16 @@ namespace AAS_Modeling
                     IndustryCode = "C",
                     Website = "tarc.edu.my"
                 },
-                Subdivision = new AssetSubdivision
-                {
-                   SectionCode = "C",
-                   DivisionCode = "03",
-                   Section = "Manufacturing",
-                   Description = "Manufacture of metal works"
-                },
-                Dimension = new AssetDimension
-                {
-                    IraiCode = "SA",
-                    Dimensions = "Shop Floor Automation",
-                    Thrust = "Asset Automation",
-                    ShiftFactor = "Technology"
-                },
-                Owner = new AssetOwner
-                {
-                    IraiCode = "05",
-                    OwnerDescription = "Engineering/ Technology"
-                },
+                Subdivision = IraiFactory.AssetSubdivisions.First(),
+                Dimension = IraiFactory.AssetDimensions.First(),
+                Owner = IraiFactory.AssetOwners.First(),
                 AssetCode = new AssetCode
                 {
                     AssetDescription = assetName,
-                    Site = "A1",
-                    Area = "A2",
-                    Process = "01",
-                    Code = code
+                    SiteCode = "A1",
+                    AreaCode = "A2",
+                    ProcessCode = "01",
+                    UniqueCode = code
                 },
                 Versions = new List<AssetVersion>
                 {
