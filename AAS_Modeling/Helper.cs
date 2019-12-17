@@ -172,9 +172,9 @@ namespace AAS_Modeling
                     IndustryCode = "C",
                     Website = "tarc.edu.my"
                 },
-                Subdivision = IraiFactory.AssetSubdivisions.First(),
-                Dimension = IraiFactory.AssetDimensions.First(),
-                Owner = IraiFactory.AssetOwners.First(),
+                Subdivision = IraiFactory.Instance.AssetSubdivisions.First(),
+                Dimension = IraiFactory.Instance.AssetDimensions.First(),
+                Owner = IraiFactory.Instance.AssetOwners.First(),
                 AssetCode = new AssetCode
                 {
                     AssetDescription = assetName,

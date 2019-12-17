@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using AAS_Modeling.Core;
 using AAS_Modeling.Factory;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -11,13 +12,14 @@ namespace AAS_Modeling
     {
         static void Main(string[] args)
         {
-            foreach (var region in RegionFactory.GetAllRegionInfos())
-            {
-                Console.WriteLine($"[{region.TwoLetterISORegionName}] - {region.EnglishName}");
-            }
-
-            Console.WriteLine($"Total country: {RegionFactory.GetAllRegionInfos().Count}");
-
+            MongoHelper.CreateAsset(Helper.CreateBaseAsset());
+//            foreach (var region in RegionFactory.GetAllRegionInfos())
+//            {
+//                Console.WriteLine($"[{region.TwoLetterISORegionName}] - {region.EnglishName}");
+//            }
+//
+//            Console.WriteLine($"Total country: {RegionFactory.GetAllRegionInfos().Count}");
+            Console.WriteLine("Done");
             Console.Read();
         }
 
