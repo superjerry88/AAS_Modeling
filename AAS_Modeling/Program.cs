@@ -12,7 +12,8 @@ namespace AAS_Modeling
     {
         static void Main(string[] args)
         {
-            MongoHelper.CreateAsset(Helper.CreateBaseAsset());
+           // MongoHelper.CreateAsset(Helper.CreateBaseAsset());
+            MongoHelper.CreateSubdivisionInDb();
 //            foreach (var region in RegionFactory.GetAllRegionInfos())
 //            {
 //                Console.WriteLine($"[{region.TwoLetterISORegionName}] - {region.EnglishName}");
