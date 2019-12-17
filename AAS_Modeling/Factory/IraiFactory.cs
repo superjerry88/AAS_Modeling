@@ -46,12 +46,25 @@ namespace AAS_Modeling.Factory
             throw new Exception("Asset Dimension cannot be found");
         }
 
-        public static AssetSubdivision GetAssetSubdivision(string code)
+        public static AssetSubdivision GetAssetSubdivisionByCode(string code)
         {
-            var value = AssetSubdivisions.FirstOrDefault(a => a.IraiCode == "code");
+            var value = AssetSubdivisions.FirstOrDefault(a => a.IraiCode == code);
             if (value != null) return value;
 
             throw new Exception("Asset Dimension cannot be found");
+        }
+
+        public static AssetSubdivision GetAssetSubdivisionByDivision(string section)
+        {
+            var value = AssetSubdivisions.FirstOrDefault(a => a.DivisionCode == section);
+            if (value != null) return value;
+
+            throw new Exception("Asset Dimension cannot be found");
+        }
+
+        public static List<AssetSubdivision> GetAssetSubdivisionBySection(string section)
+        {
+            return AssetSubdivisions.Where(c => c.Section == section || c.SectionCode == "").ToList();
         }
     }
 }
