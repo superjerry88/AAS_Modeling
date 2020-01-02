@@ -5,7 +5,7 @@ using AAS_Modeling.Model.Identifier;
 
 namespace AAS_Modeling.Factory
 {
-    class AssetSubdivisionFactory
+    public class AssetSubdivisionFactory
     {
         public static List<AssetSubdivision> GenerateAssetSubdivisions()
         {
@@ -19,7 +19,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "A",
                     Section = "Agriculture, Forestry and Fishing",
                     DivisionCode = "01",
-                    Description = "Crops and animal production, hunting and related service activities",
+                    DivisionDescription = "Crops and animal production, hunting and related service activities",
                     GroupCode = "011",
                     GroupDescription = "Growing of non-perennial crops"
                 },
@@ -28,7 +28,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "A",
                     Section = "Agriculture, Forestry and Fishing",
                     DivisionCode = "01",
-                    Description = "Crops and animal production, hunting and related service activities",
+                    DivisionDescription = "Crops and animal production, hunting and related service activities",
                     GroupCode = "012",
                     GroupDescription = "Growing of perennial crops"
                 },
@@ -37,7 +37,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "A",
                     Section = "Agriculture, Forestry and Fishing",
                     DivisionCode = "01",
-                    Description = "Crops and animal production, hunting and related service activities",
+                    DivisionDescription = "Crops and animal production, hunting and related service activities",
                     GroupCode = "013",
                     GroupDescription = "Plant propagation"
                 },
@@ -47,7 +47,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "A",
                     Section = "Agriculture, Forestry and Fishing",
                     DivisionCode = "01",
-                    Description = "Crops and animal production, hunting and related service activities",
+                    DivisionDescription = "Crops and animal production, hunting and related service activities",
                     GroupCode = "014",
                     GroupDescription = "Animal production"
                 },
@@ -56,7 +56,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "A",
                     Section = "Agriculture, Forestry and Fishing",
                     DivisionCode = "01",
-                    Description = "Crops and animal production, hunting and related service activities",
+                    DivisionDescription = "Crops and animal production, hunting and related service activities",
                     GroupCode = "015",
                     GroupDescription = "Mixed farming"
                 },
@@ -65,7 +65,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "A",
                     Section = "Agriculture, Forestry and Fishing",
                     DivisionCode = "01",
-                    Description = "Crops and animal production, hunting and related service activities",
+                    DivisionDescription = "Crops and animal production, hunting and related service activities",
                     GroupCode = "016",
                     GroupDescription = "Support activities to agriculture and post-harvest crops activities"
                 },
@@ -74,7 +74,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "A",
                     Section = "Agriculture, Forestry and Fishing",
                     DivisionCode = "01",
-                    Description = "Crops and animal production, hunting and related service activities",
+                    DivisionDescription = "Crops and animal production, hunting and related service activities",
                     GroupCode = "017",
                     GroupDescription = "Hunting, trapping and related service activities "
                 },
@@ -85,7 +85,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "A",
                     Section = "Agriculture, Forestry and Fishing",
                     DivisionCode = "02",
-                    Description = "Forestry and logging",
+                    DivisionDescription = "Forestry and logging",
                     GroupCode = "021",
                     GroupDescription = "Silviculture and other forestry activities"
 
@@ -95,7 +95,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "A",
                     Section = "Agriculture, Forestry and Fishing",
                     DivisionCode = "02",
-                    Description = "Forestry and logging",
+                    DivisionDescription = "Forestry and logging",
                     GroupCode = "022",
                     GroupDescription = "Logging"
 
@@ -105,7 +105,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "A",
                     Section = "Agriculture, Forestry and Fishing",
                     DivisionCode = "02",
-                    Description = "Forestry and logging",
+                    DivisionDescription = "Forestry and logging",
                     GroupCode = "023",
                     GroupDescription = "Gathering of non-wood forest products"
 
@@ -115,7 +115,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "A",
                     Section = "Agriculture, Forestry and Fishing",
                     DivisionCode = "02",
-                    Description = "Forestry and logging",
+                    DivisionDescription = "Forestry and logging",
                     GroupCode = "024",
                     GroupDescription = "Support services to forestry"
 
@@ -127,7 +127,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "A",
                     Section = "Agriculture, Forestry and Fishing",
                     DivisionCode = "03",
-                    Description = "Fishing and aquaculture",
+                    DivisionDescription = "Fishing and aquaculture",
                     GroupCode = "031",
                     GroupDescription = "Fishing"
                 },
@@ -136,7 +136,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "A",
                     Section = "Agriculture, Forestry and Fishing",
                     DivisionCode = "03",
-                    Description = "Fishing and aquaculture",
+                    DivisionDescription = "Fishing and aquaculture",
                     GroupCode = "032",
                     GroupDescription = "Aquaculture"
                 },
@@ -149,7 +149,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "B",
                     Section = "Mining and Quarrying",
                     DivisionCode = "05",
-                    Description = "Mining of coal and lignite",
+                    DivisionDescription = "Mining of coal and lignite",
                     GroupCode = "051",
                     GroupDescription = "Mining of hard coal"
                 },
@@ -158,7 +158,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "B",
                     Section = "Mining and Quarrying",
                     DivisionCode = "05",
-                    Description = "Mining of coal and lignite",
+                    DivisionDescription = "Mining of coal and lignite",
                     GroupCode = "052",
                     GroupDescription = "Mining of lignite"
                 },
@@ -169,7 +169,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "B",
                     Section = "Mining and Quarrying",
                     DivisionCode = "06",
-                    Description = "Extraction of crude petroleum and natural gas",
+                    DivisionDescription = "Extraction of crude petroleum and natural gas",
                     GroupCode = "061",
                     GroupDescription = "Extraction of crude petroleum"
                 },
@@ -178,7 +178,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "B",
                     Section = "Mining and Quarrying",
                     DivisionCode = "06",
-                    Description = "Extraction of crude petroleum and natural gas",
+                    DivisionDescription = "Extraction of crude petroleum and natural gas",
                     GroupCode = "062",
                     GroupDescription = "Extraction of natural gas"
                 },
@@ -189,7 +189,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "B",
                     Section = "Mining and Quarrying",
                     DivisionCode = "07",
-                    Description = "Mining of metal ores",
+                    DivisionDescription = "Mining of metal ores",
                     GroupCode = "071",
                     GroupDescription = "Mining of iron ores"
                 },
@@ -198,7 +198,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "B",
                     Section = "Mining and Quarrying",
                     DivisionCode = "07",
-                    Description = "Mining of metal ores",
+                    DivisionDescription = "Mining of metal ores",
                     GroupCode = "072",
                     GroupDescription = "Mining of non-ferrous metal ores"
                 },
@@ -209,7 +209,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "B",
                     Section = "Mining and Quarrying",
                     DivisionCode = "08",
-                    Description = "Other mining and quarrying",
+                    DivisionDescription = "Other mining and quarrying",
                     GroupCode = "081",
                     GroupDescription = "Quarrying of stone, sand and clay"
                 },
@@ -218,7 +218,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "B",
                     Section = "Mining and Quarrying",
                     DivisionCode = "08",
-                    Description = "Other mining and quarrying",
+                    DivisionDescription = "Other mining and quarrying",
                     GroupCode = "089",
                     GroupDescription = "Mining and quarrying n.e.c."
                 },
@@ -229,7 +229,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "B",
                     Section = "Mining and Quarrying",
                     DivisionCode = "09",
-                    Description = "Mining support service activities",
+                    DivisionDescription = "Mining support service activities",
                     GroupCode = "091",
                     GroupDescription = "Support activities for petroleum and natural gas extraction"
                 },
@@ -238,7 +238,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "B",
                     Section = "Mining and Quarrying",
                     DivisionCode = "09",
-                    Description = "Mining support service activities",
+                    DivisionDescription = "Mining support service activities",
                     GroupCode = "099",
                     GroupDescription = "Support activities for other mining and quarrying"
                 },
@@ -251,7 +251,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "10",
-                    Description = "Manufacture of food products",
+                    DivisionDescription = "Manufacture of food products",
                     GroupCode = "101",
                     GroupDescription = "Processing and preserving of meat"
                 },
@@ -260,7 +260,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "10",
-                    Description = "Manufacture of food products",
+                    DivisionDescription = "Manufacture of food products",
                     GroupCode = "102",
                     GroupDescription = "Processing and preserving of fish, crustaceans and molluscs"
                 },
@@ -269,7 +269,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "10",
-                    Description = "Manufacture of food products",
+                    DivisionDescription = "Manufacture of food products",
                     GroupCode = "103",
                     GroupDescription = "Processing and preserving of fruit and vegetables"
                 },
@@ -278,7 +278,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "10",
-                    Description = "Manufacture of food products",
+                    DivisionDescription = "Manufacture of food products",
                     GroupCode = "104",
                     GroupDescription = "Manufacture of vegetable and animal oils and fats"
                 },
@@ -287,7 +287,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "10",
-                    Description = "Manufacture of food products",
+                    DivisionDescription = "Manufacture of food products",
                     GroupCode = "105",
                     GroupDescription = "Manufacture of dairy products"
                 },
@@ -296,7 +296,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "10",
-                    Description = "Manufacture of food products",
+                    DivisionDescription = "Manufacture of food products",
                     GroupCode = "106",
                     GroupDescription = "Manufacture of grain mill products, starches and starch products"
                 },
@@ -305,7 +305,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "10",
-                    Description = "Manufacture of food products",
+                    DivisionDescription = "Manufacture of food products",
                     GroupCode = "107",
                     GroupDescription = "Manufacture of other food products"
                 },
@@ -314,7 +314,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "10",
-                    Description = "Manufacture of food products",
+                    DivisionDescription = "Manufacture of food products",
                     GroupCode = "108",
                     GroupDescription = "Manufacture of prepared animal feeds"
                 },
@@ -325,7 +325,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "11",
-                    Description = "Manufacture of beverages",
+                    DivisionDescription = "Manufacture of beverages",
                     GroupCode = "110",
                     GroupDescription = "Manufacture of beverages"
                 },
@@ -336,7 +336,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "12",
-                    Description = "Manufacture of tobacco products",
+                    DivisionDescription = "Manufacture of tobacco products",
                     GroupCode = "120",
                     GroupDescription = "Manufacture of tobacco products"
                 },
@@ -347,7 +347,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "13",
-                    Description = "Manufacture of textiles",
+                    DivisionDescription = "Manufacture of textiles",
                     GroupCode = "131",
                     GroupDescription = "Spinning, weaving and finishing of textiles"
                 },
@@ -356,7 +356,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "13",
-                    Description = "Manufacture of textiles",
+                    DivisionDescription = "Manufacture of textiles",
                     GroupCode = "139",
                     GroupDescription = "Manufacture of other textiles"
                 },
@@ -367,7 +367,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "14",
-                    Description = "Manufacture of wearing apparel",
+                    DivisionDescription = "Manufacture of wearing apparel",
                     GroupCode = "141",
                     GroupDescription = "Manufacture of wearing apparel, except fur apparel"
                 },
@@ -376,7 +376,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "14",
-                    Description = "Manufacture of wearing apparel",
+                    DivisionDescription = "Manufacture of wearing apparel",
                     GroupCode = "142",
                     GroupDescription = "Manufacture of articles of fur"
                 },
@@ -385,7 +385,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "14",
-                    Description = "Manufacture of wearing apparel",
+                    DivisionDescription = "Manufacture of wearing apparel",
                     GroupCode = "143",
                     GroupDescription = "Manufacture of knitted and crocheted apparel"
                 },
@@ -396,7 +396,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "15",
-                    Description = "Manufacture of leather and related products",
+                    DivisionDescription = "Manufacture of leather and related products",
                     GroupCode = "151",
                     GroupDescription = "Tanning and dressing of leather; manufacture of luggage,handbags, saddlery and harness; dressing and dyeing of fur"
                 },
@@ -405,7 +405,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "15",
-                    Description = "Manufacture of leather and related products",
+                    DivisionDescription = "Manufacture of leather and related products",
                     GroupCode = "152",
                     GroupDescription = "Manufacture of footwear"
                 },
@@ -416,7 +416,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "16",
-                    Description = "Manufacture of wood and products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials ",
+                    DivisionDescription = "Manufacture of wood and products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials ",
                     GroupCode = "161",
                     GroupDescription = "Sawmilling and planing of wood"
                 },
@@ -425,7 +425,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "16",
-                    Description = "Manufacture of wood and products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials ",
+                    DivisionDescription = "Manufacture of wood and products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials ",
                     GroupCode = "162",
                     GroupDescription = "Manufacture of products of wood, cork, straw and plaiting materials"
                 },
@@ -436,7 +436,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "17",
-                    Description = "Manufacture of paper and paper products",
+                    DivisionDescription = "Manufacture of paper and paper products",
                     GroupCode = "170",
                     GroupDescription = "Manufacture of paper and paper products"
                 },
@@ -447,7 +447,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "18",
-                    Description = "Printing and reproduction of recorded media",
+                    DivisionDescription = "Printing and reproduction of recorded media",
                     GroupCode = "181",
                     GroupDescription = "Printing and service activities related to printing"
                 },
@@ -456,7 +456,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "18",
-                    Description = "Printing and reproduction of recorded media",
+                    DivisionDescription = "Printing and reproduction of recorded media",
                     GroupCode = "182",
                     GroupDescription = "Reproduction of recorded media"
                 },
@@ -467,7 +467,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "19",
-                    Description = "Manufacture of coke and refined petroleum products",
+                    DivisionDescription = "Manufacture of coke and refined petroleum products",
                     GroupCode = "191",
                     GroupDescription = "Manufacture of coke oven products"
                 },
@@ -476,7 +476,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "19",
-                    Description = "Manufacture of coke and refined petroleum products",
+                    DivisionDescription = "Manufacture of coke and refined petroleum products",
                     GroupCode = "192",
                     GroupDescription = "Manufacture of refined petroleum products"
                 },
@@ -487,7 +487,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "20",
-                    Description = "Manufacture of chemicals and chemical products",
+                    DivisionDescription = "Manufacture of chemicals and chemical products",
                     GroupCode = "201",
                     GroupDescription = "Manufacture of basic chemicals, fertilizers and nitrogen compounds, plastics and synthetic rubber in primary forms"
                 },
@@ -496,7 +496,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "20",
-                    Description = "Manufacture of chemicals and chemical products",
+                    DivisionDescription = "Manufacture of chemicals and chemical products",
                     GroupCode = "202",
                     GroupDescription = "Manufacture of other chemical products"
                 },
@@ -505,7 +505,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "20",
-                    Description = "Manufacture of chemicals and chemical products",
+                    DivisionDescription = "Manufacture of chemicals and chemical products",
                     GroupCode = "203",
                     GroupDescription = "Manufacture of man-made fibres"
                 },
@@ -516,7 +516,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "21",
-                    Description = "Manufacture of basic pharmaceutical products and pharmaceutical preparations",
+                    DivisionDescription = "Manufacture of basic pharmaceutical products and pharmaceutical preparations",
                     GroupCode = "210",
                     GroupDescription = "Manufacture of pharmaceuticals, medicinal chemical and botanical products"
                 },
@@ -527,7 +527,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "22",
-                    Description = "Manufacture of rubber and plastics products",
+                    DivisionDescription = "Manufacture of rubber and plastics products",
                     GroupCode = "221",
                     GroupDescription = "Manufacture of rubber products"
                 },
@@ -536,7 +536,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "22",
-                    Description = "Manufacture of rubber and plastics products",
+                    DivisionDescription = "Manufacture of rubber and plastics products",
                     GroupCode = "222",
                     GroupDescription = "Manufacture of plastics products"
                 },
@@ -547,7 +547,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "23",
-                    Description = "Manufacture of other non-metallic mineral products",
+                    DivisionDescription = "Manufacture of other non-metallic mineral products",
                     GroupCode = "231",
                     GroupDescription = "Manufacture of glass and glass products"
                 },
@@ -556,7 +556,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "23",
-                    Description = "Manufacture of other non-metallic mineral products",
+                    DivisionDescription = "Manufacture of other non-metallic mineral products",
                     GroupCode = "239",
                     GroupDescription = "Manufacture of non-metallic mineral products n.e.c."
                 },
@@ -567,7 +567,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "24",
-                    Description = "Manufacture of basic metals",
+                    DivisionDescription = "Manufacture of basic metals",
                     GroupCode = "241",
                     GroupDescription = "Manufacture of basic iron and steel"
                 },
@@ -576,7 +576,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "24",
-                    Description = "Manufacture of basic metals",
+                    DivisionDescription = "Manufacture of basic metals",
                     GroupCode = "242",
                     GroupDescription = "Manufacture of basic precious and other non-ferrous metals"
                 },
@@ -585,7 +585,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "24",
-                    Description = "Manufacture of basic metals",
+                    DivisionDescription = "Manufacture of basic metals",
                     GroupCode = "243",
                     GroupDescription = "Casting of metals"
                 },
@@ -596,7 +596,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "25",
-                    Description = "Manufacture of fabricated metal products, except machinery and equipment",
+                    DivisionDescription = "Manufacture of fabricated metal products, except machinery and equipment",
                     GroupCode = "251",
                     GroupDescription = "Manufacture of structural metal products, tanks, reservoirs and steam generators"
                 },
@@ -605,7 +605,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "25",
-                    Description = "Manufacture of fabricated metal products, except machinery and equipment",
+                    DivisionDescription = "Manufacture of fabricated metal products, except machinery and equipment",
                     GroupCode = "252",
                     GroupDescription = "Manufacture of weapons and ammunition"
                 },
@@ -614,7 +614,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "25",
-                    Description = "Manufacture of fabricated metal products, except machinery and equipment",
+                    DivisionDescription = "Manufacture of fabricated metal products, except machinery and equipment",
                     GroupCode = "259",
                     GroupDescription = "Manufacture of other fabricated metal products; metalworking service activities"
                 },
@@ -625,7 +625,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "26",
-                    Description = "Manufacture of computer, electronic and optical products",
+                    DivisionDescription = "Manufacture of computer, electronic and optical products",
                     GroupCode = "261",
                     GroupDescription = "Manufacture of electronic components and boards"
                 },
@@ -634,7 +634,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "26",
-                    Description = "Manufacture of computer, electronic and optical products",
+                    DivisionDescription = "Manufacture of computer, electronic and optical products",
                     GroupCode = "262",
                     GroupDescription = "Manufacture of computers and peripheral equipment"
                 },
@@ -643,7 +643,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "26",
-                    Description = "Manufacture of computer, electronic and optical products",
+                    DivisionDescription = "Manufacture of computer, electronic and optical products",
                     GroupCode = "263",
                     GroupDescription = "Manufacture of communication equipment"
                 },
@@ -652,7 +652,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "26",
-                    Description = "Manufacture of computer, electronic and optical products",
+                    DivisionDescription = "Manufacture of computer, electronic and optical products",
                     GroupCode = "264",
                     GroupDescription = "Manufacture of consumer electronics"
                 },
@@ -661,7 +661,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "26",
-                    Description = "Manufacture of computer, electronic and optical products",
+                    DivisionDescription = "Manufacture of computer, electronic and optical products",
                     GroupCode = "265",
                     GroupDescription = "Manufacture of measuring, testing, navigating and control equipment; watches and clocks"
                 },
@@ -670,7 +670,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "26",
-                    Description = "Manufacture of computer, electronic and optical products",
+                    DivisionDescription = "Manufacture of computer, electronic and optical products",
                     GroupCode = "266",
                     GroupDescription = "Manufacture of irradiation, electromedical and electrotherapeutic equipment"
                 },
@@ -679,7 +679,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "26",
-                    Description = "Manufacture of computer, electronic and optical products",
+                    DivisionDescription = "Manufacture of computer, electronic and optical products",
                     GroupCode = "267",
                     GroupDescription = "Manufacture of optical instruments and photographic equipment"
                 },
@@ -688,7 +688,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "26",
-                    Description = "Manufacture of computer, electronic and optical products",
+                    DivisionDescription = "Manufacture of computer, electronic and optical products",
                     GroupCode = "268",
                     GroupDescription = "Manufacture of magnetic and optical media"
                 },
@@ -700,7 +700,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "27",
-                    Description = "Manufacture of electrical equipment",
+                    DivisionDescription = "Manufacture of electrical equipment",
                     GroupCode = "271",
                     GroupDescription = "Manufacture of electric motors, generators, transformers and electricity distribution and control apparatus"
                 },
@@ -709,7 +709,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "27",
-                    Description = "Manufacture of electrical equipment",
+                    DivisionDescription = "Manufacture of electrical equipment",
                     GroupCode = "272",
                     GroupDescription = "Manufacture of batteries and accumulators"
                 },
@@ -718,7 +718,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "27",
-                    Description = "Manufacture of electrical equipment",
+                    DivisionDescription = "Manufacture of electrical equipment",
                     GroupCode = "273",
                     GroupDescription = "Manufacture of wiring and wiring devices"
                 },
@@ -727,7 +727,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "27",
-                    Description = "Manufacture of electrical equipment",
+                    DivisionDescription = "Manufacture of electrical equipment",
                     GroupCode = "274",
                     GroupDescription = "Manufacture of electric lighting equipment"
                 },
@@ -736,7 +736,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "27",
-                    Description = "Manufacture of electrical equipment",
+                    DivisionDescription = "Manufacture of electrical equipment",
                     GroupCode = "275",
                     GroupDescription = "Manufacture of domestic appliances"
                 },
@@ -745,7 +745,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "27",
-                    Description = "Manufacture of electrical equipment",
+                    DivisionDescription = "Manufacture of electrical equipment",
                     GroupCode = "279",
                     GroupDescription = "Manufacture of other electrical equipment"
                 },
@@ -757,7 +757,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "28",
-                    Description = "Manufacture of machinery and equipment n.e.c.",
+                    DivisionDescription = "Manufacture of machinery and equipment n.e.c.",
                     GroupCode = "281",
                     GroupDescription = "Manufacture of general-purpose machinery"
                 },
@@ -766,7 +766,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "28",
-                    Description = "Manufacture of machinery and equipment n.e.c.",
+                    DivisionDescription = "Manufacture of machinery and equipment n.e.c.",
                     GroupCode = "282",
                     GroupDescription = "Manufacture of special-purpose machinery"
                 },
@@ -777,7 +777,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "29",
-                    Description = "Manufacture of motor vehicles, trailers and semitrailers",
+                    DivisionDescription = "Manufacture of motor vehicles, trailers and semitrailers",
                     GroupCode = "291",
                     GroupDescription = "Manufacture of motor vehicles"
                 },
@@ -786,7 +786,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "29",
-                    Description = "Manufacture of motor vehicles, trailers and semitrailers",
+                    DivisionDescription = "Manufacture of motor vehicles, trailers and semitrailers",
                     GroupCode = "292",
                     GroupDescription = "Manufacture of bodies (coachwork) for motor vehicles; manufacture of trailers and semi-trailers"
                 },
@@ -795,7 +795,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "29",
-                    Description = "Manufacture of motor vehicles, trailers and semitrailers",
+                    DivisionDescription = "Manufacture of motor vehicles, trailers and semitrailers",
                     GroupCode = "293",
                     GroupDescription = "Manufacture of parts and accessories for motor vehicles"
                 },
@@ -806,7 +806,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "30",
-                    Description = "Manufacture of other transport equipment",
+                    DivisionDescription = "Manufacture of other transport equipment",
                     GroupCode = "301",
                     GroupDescription = "Building of ships and boats"
                 },
@@ -815,7 +815,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "30",
-                    Description = "Manufacture of other transport equipment",
+                    DivisionDescription = "Manufacture of other transport equipment",
                     GroupCode = "302",
                     GroupDescription = "Manufacture of railway locomotives and rolling stock"
                 },
@@ -824,7 +824,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "30",
-                    Description = "Manufacture of other transport equipment",
+                    DivisionDescription = "Manufacture of other transport equipment",
                     GroupCode = "303",
                     GroupDescription = "Manufacture of air and spacecraft and related machinery"
                 },
@@ -833,7 +833,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "30",
-                    Description = "Manufacture of other transport equipment",
+                    DivisionDescription = "Manufacture of other transport equipment",
                     GroupCode = "304",
                     GroupDescription = "Manufacture of military fighting vehicles"
                 },
@@ -842,7 +842,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "30",
-                    Description = "Manufacture of other transport equipment",
+                    DivisionDescription = "Manufacture of other transport equipment",
                     GroupCode = "309",
                     GroupDescription = "Manufacture of transport equipment n.e.c."
                 },
@@ -853,7 +853,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "31",
-                    Description = "Manufacture of furniture",
+                    DivisionDescription = "Manufacture of furniture",
                     GroupCode = "310",
                     GroupDescription = "Manufacture of furniture"
                 },
@@ -864,7 +864,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "32",
-                    Description = "Other manufacturing",
+                    DivisionDescription = "Other manufacturing",
                     GroupCode = "321",
                     GroupDescription = "Manufacture of jewellery, bijouterie and related articles"
                 },
@@ -873,7 +873,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "32",
-                    Description = "Other manufacturing",
+                    DivisionDescription = "Other manufacturing",
                     GroupCode = "322",
                     GroupDescription = "Manufacture of musical instruments"
                 },
@@ -882,7 +882,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "32",
-                    Description = "Other manufacturing",
+                    DivisionDescription = "Other manufacturing",
                     GroupCode = "323",
                     GroupDescription = "Manufacture of sports goods"
                 },
@@ -891,7 +891,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "32",
-                    Description = "Other manufacturing",
+                    DivisionDescription = "Other manufacturing",
                     GroupCode = "324",
                     GroupDescription = "Manufacture of games and toys"
                 },
@@ -900,7 +900,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "32",
-                    Description = "Other manufacturing",
+                    DivisionDescription = "Other manufacturing",
                     GroupCode = "325",
                     GroupDescription = "Manufacture of medical and dental instruments and supplies"
                 },
@@ -909,7 +909,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "32",
-                    Description = "Other manufacturing",
+                    DivisionDescription = "Other manufacturing",
                     GroupCode = "329",
                     GroupDescription = "Other manufacturing n.e.c."
                 },
@@ -920,7 +920,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "33",
-                    Description = "Repair and installation of machinery and equipment",
+                    DivisionDescription = "Repair and installation of machinery and equipment",
                     GroupCode = "331",
                     GroupDescription = "Repair of fabricated metal products, machinery and equipment"
                 },
@@ -929,7 +929,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "C",
                     Section = "Manufacturing",
                     DivisionCode = "33",
-                    Description = "Repair and installation of machinery and equipment",
+                    DivisionDescription = "Repair and installation of machinery and equipment",
                     GroupCode = "332",
                     GroupDescription = "Installation of industrial machinery and equipment"
                 },
@@ -943,7 +943,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "D",
                     Section = "Electricity, Gas, Steam and Air conditioning supply",
                     DivisionCode = "35",
-                    Description = "Electricity, gas, steam and air conditioning supply",
+                    DivisionDescription = "Electricity, gas, steam and air conditioning supply",
                     GroupCode = "351",
                     GroupDescription = "Electric power generation, transmission and distribution"
                 },
@@ -952,7 +952,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "D",
                     Section = "Electricity, Gas, Steam and Air conditioning supply",
                     DivisionCode = "35",
-                    Description = "Electricity, gas, steam and air conditioning supply",
+                    DivisionDescription = "Electricity, gas, steam and air conditioning supply",
                     GroupCode = "352",
                     GroupDescription = "Manufacture of gas; distribution of gaseous fuels through mains"
                 },
@@ -961,7 +961,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "D",
                     Section = "Electricity, Gas, Steam and Air conditioning supply",
                     DivisionCode = "35",
-                    Description = "Electricity, gas, steam and air conditioning supply",
+                    DivisionDescription = "Electricity, gas, steam and air conditioning supply",
                     GroupCode = "353",
                     GroupDescription = "Steam and air conditioning supply "
                 },
@@ -974,7 +974,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "E",
                     Section = "Water Supply; Sewerage, Waste Management And Remediation Activities",
                     DivisionCode = "36",
-                    Description = "Water collection, treatment and supply",
+                    DivisionDescription = "Water collection, treatment and supply",
                     GroupCode = "351",
                     GroupDescription = "Water collection, treatment and supply"
                 },
@@ -985,7 +985,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "E",
                     Section = "Water Supply; Sewerage, Waste Management And Remediation Activities",
                     DivisionCode = "37",
-                    Description = "Sewerage",
+                    DivisionDescription = "Sewerage",
                     GroupCode = "370",
                     GroupDescription = "Sewerage"
                 },
@@ -996,7 +996,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "E",
                     Section = "Water Supply; Sewerage, Waste Management And Remediation Activities",
                     DivisionCode = "38",
-                    Description = "Waste collection, treatment and disposal activities; materials recovery",
+                    DivisionDescription = "Waste collection, treatment and disposal activities; materials recovery",
                     GroupCode = "381",
                     GroupDescription = "Waste collection"
                 },
@@ -1005,7 +1005,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "E",
                     Section = "Water Supply; Sewerage, Waste Management And Remediation Activities",
                     DivisionCode = "38",
-                    Description = "Waste collection, treatment and disposal activities; materials recovery",
+                    DivisionDescription = "Waste collection, treatment and disposal activities; materials recovery",
                     GroupCode = "382",
                     GroupDescription = "Waste treatment and disposal"
                 },
@@ -1014,7 +1014,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "E",
                     Section = "Water Supply; Sewerage, Waste Management And Remediation Activities",
                     DivisionCode = "38",
-                    Description = "Waste collection, treatment and disposal activities; materials recovery",
+                    DivisionDescription = "Waste collection, treatment and disposal activities; materials recovery",
                     GroupCode = "383",
                     GroupDescription = "Materials recovery"
                 },
@@ -1025,7 +1025,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "E",
                     Section = "Water Supply; Sewerage, Waste Management And Remediation Activities",
                     DivisionCode = "39",
-                    Description = "Remediation activities and other waste management services",
+                    DivisionDescription = "Remediation activities and other waste management services",
                     GroupCode = "390",
                     GroupDescription = "Remediation activities and other waste management services"
                 },
@@ -1038,7 +1038,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "F",
                     Section = "Construction",
                     DivisionCode = "41",
-                    Description = "Construction of buildings",
+                    DivisionDescription = "Construction of buildings",
                     GroupCode = "410",
                     GroupDescription = "Construction of buildings"
                 },
@@ -1049,7 +1049,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "F",
                     Section = "Construction",
                     DivisionCode = "42",
-                    Description = "Civil engineering",
+                    DivisionDescription = "Civil engineering",
                     GroupCode = "421",
                     GroupDescription = "Construction of roads and railways"
                 },
@@ -1058,7 +1058,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "F",
                     Section = "Construction",
                     DivisionCode = "42",
-                    Description = "Civil engineering",
+                    DivisionDescription = "Civil engineering",
                     GroupCode = "422",
                     GroupDescription = "Construction of utility projects"
                 },
@@ -1067,7 +1067,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "F",
                     Section = "Construction",
                     DivisionCode = "42",
-                    Description = "Civil engineering",
+                    DivisionDescription = "Civil engineering",
                     GroupCode = "429",
                     GroupDescription = "Construction of other civil engineering projects"
                 },
@@ -1078,7 +1078,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "F",
                     Section = "Construction",
                     DivisionCode = "43",
-                    Description = "Specialized construction activities",
+                    DivisionDescription = "Specialized construction activities",
                     GroupCode = "431",
                     GroupDescription = "Demolition and site preparation"
                 },
@@ -1087,7 +1087,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "F",
                     Section = "Construction",
                     DivisionCode = "43",
-                    Description = "Specialized construction activities",
+                    DivisionDescription = "Specialized construction activities",
                     GroupCode = "432",
                     GroupDescription = "Electrical, plumbing and other construction installation activities"
                 },
@@ -1096,7 +1096,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "F",
                     Section = "Construction",
                     DivisionCode = "43",
-                    Description = "Specialized construction activities",
+                    DivisionDescription = "Specialized construction activities",
                     GroupCode = "433",
                     GroupDescription = "Building completion and finishing"
                 },
@@ -1105,7 +1105,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "F",
                     Section = "Construction",
                     DivisionCode = "43",
-                    Description = "Specialized construction activities",
+                    DivisionDescription = "Specialized construction activities",
                     GroupCode = "439",
                     GroupDescription = "Other specialized construction activities"
                 },
@@ -1118,7 +1118,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "G",
                     Section = "Wholesale And Retail Trade; Repair Of Motor Vehicles And Motorcycles",
                     DivisionCode = "45",
-                    Description = "Wholesale and retail trade and repair of motor vehicles and motorcycles",
+                    DivisionDescription = "Wholesale and retail trade and repair of motor vehicles and motorcycles",
                     GroupCode = "451",
                     GroupDescription = "Sale of motor vehicles"
                 },
@@ -1127,7 +1127,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "G",
                     Section = "Wholesale And Retail Trade; Repair Of Motor Vehicles And Motorcycles",
                     DivisionCode = "45",
-                    Description = "Wholesale and retail trade and repair of motor vehicles and motorcycles",
+                    DivisionDescription = "Wholesale and retail trade and repair of motor vehicles and motorcycles",
                     GroupCode = "452",
                     GroupDescription = "Maintenance and repair of motor vehicles"
                 },
@@ -1136,7 +1136,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "G",
                     Section = "Wholesale And Retail Trade; Repair Of Motor Vehicles And Motorcycles",
                     DivisionCode = "45",
-                    Description = "Wholesale and retail trade and repair of motor vehicles and motorcycles",
+                    DivisionDescription = "Wholesale and retail trade and repair of motor vehicles and motorcycles",
                     GroupCode = "453",
                     GroupDescription = "Sale of motor vehicle parts and accessories"
                 },
@@ -1145,7 +1145,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "G",
                     Section = "Wholesale And Retail Trade; Repair Of Motor Vehicles And Motorcycles",
                     DivisionCode = "45",
-                    Description = "Wholesale and retail trade and repair of motor vehicles and motorcycles",
+                    DivisionDescription = "Wholesale and retail trade and repair of motor vehicles and motorcycles",
                     GroupCode = "454",
                     GroupDescription = "Sale, maintenance and repair of motorcycles and related parts and accessories"
                 },
@@ -1156,7 +1156,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "G",
                     Section = "Wholesale And Retail Trade; Repair Of Motor Vehicles And Motorcycles",
                     DivisionCode = "46",
-                    Description = "Wholesale trade, except of motor vehicles and motorcycles",
+                    DivisionDescription = "Wholesale trade, except of motor vehicles and motorcycles",
                     GroupCode = "461",
                     GroupDescription = "Wholesale on a fee or contract basis"
                 },
@@ -1165,7 +1165,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "G",
                     Section = "Wholesale And Retail Trade; Repair Of Motor Vehicles And Motorcycles",
                     DivisionCode = "46",
-                    Description = "Wholesale trade, except of motor vehicles and motorcycles",
+                    DivisionDescription = "Wholesale trade, except of motor vehicles and motorcycles",
                     GroupCode = "462",
                     GroupDescription = "Wholesale of agricultural raw materials and live animals"
                 },
@@ -1174,7 +1174,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "G",
                     Section = "Wholesale And Retail Trade; Repair Of Motor Vehicles And Motorcycles",
                     DivisionCode = "46",
-                    Description = "Wholesale trade, except of motor vehicles and motorcycles",
+                    DivisionDescription = "Wholesale trade, except of motor vehicles and motorcycles",
                     GroupCode = "463",
                     GroupDescription = "Wholesale of food, beverages and tobacco"
                 },
@@ -1183,7 +1183,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "G",
                     Section = "Wholesale And Retail Trade; Repair Of Motor Vehicles And Motorcycles",
                     DivisionCode = "46",
-                    Description = "Wholesale trade, except of motor vehicles and motorcycles",
+                    DivisionDescription = "Wholesale trade, except of motor vehicles and motorcycles",
                     GroupCode = "464",
                     GroupDescription = "Wholesale of household goods"
                 },
@@ -1192,7 +1192,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "G",
                     Section = "Wholesale And Retail Trade; Repair Of Motor Vehicles And Motorcycles",
                     DivisionCode = "46",
-                    Description = "Wholesale trade, except of motor vehicles and motorcycles",
+                    DivisionDescription = "Wholesale trade, except of motor vehicles and motorcycles",
                     GroupCode = "465",
                     GroupDescription = "Wholesale of machinery, equipment and supplies"
                 },
@@ -1201,7 +1201,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "G",
                     Section = "Wholesale And Retail Trade; Repair Of Motor Vehicles And Motorcycles",
                     DivisionCode = "46",
-                    Description = "Wholesale trade, except of motor vehicles and motorcycles",
+                    DivisionDescription = "Wholesale trade, except of motor vehicles and motorcycles",
                     GroupCode = "466",
                     GroupDescription = "Other specialized wholesale"
                 },
@@ -1210,7 +1210,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "G",
                     Section = "Wholesale And Retail Trade; Repair Of Motor Vehicles And Motorcycles",
                     DivisionCode = "46",
-                    Description = "Wholesale trade, except of motor vehicles and motorcycles",
+                    DivisionDescription = "Wholesale trade, except of motor vehicles and motorcycles",
                     GroupCode = "469",
                     GroupDescription = "Non-specialized wholesale trade"
                 },
@@ -1221,7 +1221,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "G",
                     Section = "Wholesale And Retail Trade; Repair Of Motor Vehicles And Motorcycles",
                     DivisionCode = "47",
-                    Description = "Retail trade, except of motor vehicles and motorcycles",
+                    DivisionDescription = "Retail trade, except of motor vehicles and motorcycles",
                     GroupCode = "471",
                     GroupDescription = "Retail sale in non-specialized stores"
                 },
@@ -1230,7 +1230,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "G",
                     Section = "Wholesale And Retail Trade; Repair Of Motor Vehicles And Motorcycles",
                     DivisionCode = "47",
-                    Description = "Retail trade, except of motor vehicles and motorcycles",
+                    DivisionDescription = "Retail trade, except of motor vehicles and motorcycles",
                     GroupCode = "472",
                     GroupDescription = "Retail sale of food, beverages and tobacco in specialized stores"
                 },
@@ -1239,7 +1239,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "G",
                     Section = "Wholesale And Retail Trade; Repair Of Motor Vehicles And Motorcycles",
                     DivisionCode = "47",
-                    Description = "Retail trade, except of motor vehicles and motorcycles",
+                    DivisionDescription = "Retail trade, except of motor vehicles and motorcycles",
                     GroupCode = "473",
                     GroupDescription = "Retail sale of automotive fuel in specialized stores"
                 },
@@ -1248,7 +1248,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "G",
                     Section = "Wholesale And Retail Trade; Repair Of Motor Vehicles And Motorcycles",
                     DivisionCode = "47",
-                    Description = "Retail trade, except of motor vehicles and motorcycles",
+                    DivisionDescription = "Retail trade, except of motor vehicles and motorcycles",
                     GroupCode = "474",
                     GroupDescription = "Retail sale of information and communications equipment in specialized stores"
                 },
@@ -1257,7 +1257,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "G",
                     Section = "Wholesale And Retail Trade; Repair Of Motor Vehicles And Motorcycles",
                     DivisionCode = "47",
-                    Description = "Retail trade, except of motor vehicles and motorcycles",
+                    DivisionDescription = "Retail trade, except of motor vehicles and motorcycles",
                     GroupCode = "475",
                     GroupDescription = "Retail sale of other household equipment in specialized stores"
                 },
@@ -1266,7 +1266,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "G",
                     Section = "Wholesale And Retail Trade; Repair Of Motor Vehicles And Motorcycles",
                     DivisionCode = "47",
-                    Description = "Retail trade, except of motor vehicles and motorcycles",
+                    DivisionDescription = "Retail trade, except of motor vehicles and motorcycles",
                     GroupCode = "476",
                     GroupDescription = "Retail sale of cultural and recreation goods in specialized stores"
                 },
@@ -1275,7 +1275,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "G",
                     Section = "Wholesale And Retail Trade; Repair Of Motor Vehicles And Motorcycles",
                     DivisionCode = "47",
-                    Description = "Retail trade, except of motor vehicles and motorcycles",
+                    DivisionDescription = "Retail trade, except of motor vehicles and motorcycles",
                     GroupCode = "477",
                     GroupDescription = "Retail sale of other goods in specialized stores"
                 },
@@ -1284,7 +1284,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "G",
                     Section = "Wholesale And Retail Trade; Repair Of Motor Vehicles And Motorcycles",
                     DivisionCode = "47",
-                    Description = "Retail trade, except of motor vehicles and motorcycles",
+                    DivisionDescription = "Retail trade, except of motor vehicles and motorcycles",
                     GroupCode = "478",
                     GroupDescription = "Retail sale via stalls and markets"
                 },
@@ -1293,7 +1293,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "G",
                     Section = "Wholesale And Retail Trade; Repair Of Motor Vehicles And Motorcycles",
                     DivisionCode = "47",
-                    Description = "Retail trade, except of motor vehicles and motorcycles",
+                    DivisionDescription = "Retail trade, except of motor vehicles and motorcycles",
                     GroupCode = "479",
                     GroupDescription = "Retail trade not in stores, stalls or markets"
                 },
@@ -1307,7 +1307,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "H",
                     Section = "Transportation And Storage",
                     DivisionCode = "49",
-                    Description = "Land transport and transport via pipelines",
+                    DivisionDescription = "Land transport and transport via pipelines",
                     GroupCode = "491",
                     GroupDescription = "Transport via railways"
                 },
@@ -1316,7 +1316,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "H",
                     Section = "Transportation And Storage",
                     DivisionCode = "49",
-                    Description = "Land transport and transport via pipelines",
+                    DivisionDescription = "Land transport and transport via pipelines",
                     GroupCode = "492",
                     GroupDescription = "Other land transport"
                 },
@@ -1325,7 +1325,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "H",
                     Section = "Transportation And Storage",
                     DivisionCode = "49",
-                    Description = "Land transport and transport via pipelines",
+                    DivisionDescription = "Land transport and transport via pipelines",
                     GroupCode = "493",
                     GroupDescription = "Transport via pipeline"
                 },
@@ -1336,7 +1336,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "H",
                     Section = "Transportation And Storage",
                     DivisionCode = "50",
-                    Description = "Water transport",
+                    DivisionDescription = "Water transport",
                     GroupCode = "501",
                     GroupDescription = "Sea and coastal water transport"
                 },
@@ -1345,7 +1345,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "H",
                     Section = "Transportation And Storage",
                     DivisionCode = "50",
-                    Description = "Water transport",
+                    DivisionDescription = "Water transport",
                     GroupCode = "502",
                     GroupDescription = "Inland water transport"
                 },
@@ -1356,7 +1356,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "H",
                     Section = "Transportation And Storage",
                     DivisionCode = "51",
-                    Description = "Air transport",
+                    DivisionDescription = "Air transport",
                     GroupCode = "511",
                     GroupDescription = "Passenger air transport"
                 },
@@ -1365,7 +1365,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "H",
                     Section = "Transportation And Storage",
                     DivisionCode = "51",
-                    Description = "Air transport",
+                    DivisionDescription = "Air transport",
                     GroupCode = "512",
                     GroupDescription = "Freight air transport"
                 },
@@ -1376,7 +1376,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "H",
                     Section = "Transportation And Storage",
                     DivisionCode = "52",
-                    Description = "Warehousing and support activities for transportation",
+                    DivisionDescription = "Warehousing and support activities for transportation",
                     GroupCode = "521",
                     GroupDescription = "Warehousing and storage"
                 },
@@ -1385,7 +1385,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "H",
                     Section = "Transportation And Storage",
                     DivisionCode = "52",
-                    Description = "Warehousing and support activities for transportation",
+                    DivisionDescription = "Warehousing and support activities for transportation",
                     GroupCode = "522",
                     GroupDescription = "Support activities for transportation"
                 },
@@ -1396,7 +1396,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "H",
                     Section = "Transportation And Storage",
                     DivisionCode = "53",
-                    Description = "Postal and courier activities",
+                    DivisionDescription = "Postal and courier activities",
                     GroupCode = "531",
                     GroupDescription = "Postal activities"
                 },
@@ -1405,7 +1405,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "H",
                     Section = "Transportation And Storage",
                     DivisionCode = "53",
-                    Description = "Postal and courier activities",
+                    DivisionDescription = "Postal and courier activities",
                     GroupCode = "532",
                     GroupDescription = "Courier activities"
                 },
@@ -1418,7 +1418,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "I",
                     Section = "Accommodation And Food Service Activities",
                     DivisionCode = "55",
-                    Description = "Accommodation",
+                    DivisionDescription = "Accommodation",
                     GroupCode = "551",
                     GroupDescription = "Short term accommodation activities"
                 },
@@ -1427,7 +1427,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "I",
                     Section = "Accommodation And Food Service Activities",
                     DivisionCode = "55",
-                    Description = "Accommodation",
+                    DivisionDescription = "Accommodation",
                     GroupCode = "552",
                     GroupDescription = "Camping grounds, recreational vehicle parks and trailer parks"
                 },
@@ -1436,7 +1436,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "I",
                     Section = "Accommodation And Food Service Activities",
                     DivisionCode = "55",
-                    Description = "Accommodation",
+                    DivisionDescription = "Accommodation",
                     GroupCode = "559",
                     GroupDescription = "Other accommodation"
                 },
@@ -1447,7 +1447,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "I",
                     Section = "Accommodation And Food Service Activities",
                     DivisionCode = "56",
-                    Description = "Food and beverage service activities",
+                    DivisionDescription = "Food and beverage service activities",
                     GroupCode = "561",
                     GroupDescription = "Restaurants and mobile food service activities"
                 },
@@ -1456,7 +1456,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "I",
                     Section = "Accommodation And Food Service Activities",
                     DivisionCode = "56",
-                    Description = "Food and beverage service activities",
+                    DivisionDescription = "Food and beverage service activities",
                     GroupCode = "562",
                     GroupDescription = "Event catering and other food service activities"
                 },
@@ -1465,7 +1465,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "I",
                     Section = "Accommodation And Food Service Activities",
                     DivisionCode = "56",
-                    Description = "Food and beverage service activities",
+                    DivisionDescription = "Food and beverage service activities",
                     GroupCode = "563",
                     GroupDescription = "Beverage serving activities"
                 },
@@ -1478,7 +1478,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "J",
                     Section = "Information And Communication",
                     DivisionCode = "58",
-                    Description = "Publishing activities",
+                    DivisionDescription = "Publishing activities",
                     GroupCode = "581",
                     GroupDescription = "Publishing of books, periodicals and other publishing activities"
                 },
@@ -1487,7 +1487,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "J",
                     Section = "Information And Communication",
                     DivisionCode = "58",
-                    Description = "Publishing activities",
+                    DivisionDescription = "Publishing activities",
                     GroupCode = "582",
                     GroupDescription = "Software publishing"
                 },
@@ -1498,7 +1498,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "J",
                     Section = "Information And Communication",
                     DivisionCode = "59",
-                    Description = "Motion picture, video and television programme production, sound recording and music publishing activities",
+                    DivisionDescription = "Motion picture, video and television programme production, sound recording and music publishing activities",
                     GroupCode = "591",
                     GroupDescription = "Motion picture, video and television programme activities"
                 },
@@ -1507,7 +1507,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "J",
                     Section = "Information And Communication",
                     DivisionCode = "59",
-                    Description = "Motion picture, video and television programme production, sound recording and music publishing activities",
+                    DivisionDescription = "Motion picture, video and television programme production, sound recording and music publishing activities",
                     GroupCode = "592",
                     GroupDescription = "Sound recording and music publishing activities"
                 },
@@ -1518,7 +1518,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "J",
                     Section = "Information And Communication",
                     DivisionCode = "60",
-                    Description = "Programming and broadcasting activities",
+                    DivisionDescription = "Programming and broadcasting activities",
                     GroupCode = "601",
                     GroupDescription = "Radio broadcasting"
                 },
@@ -1527,7 +1527,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "J",
                     Section = "Information And Communication",
                     DivisionCode = "60",
-                    Description = "Programming and broadcasting activities",
+                    DivisionDescription = "Programming and broadcasting activities",
                     GroupCode = "602",
                     GroupDescription = "Television programming and broadcasting activities"
                 },
@@ -1538,7 +1538,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "J",
                     Section = "Information And Communication",
                     DivisionCode = "61",
-                    Description = "Telecommunications",
+                    DivisionDescription = "Telecommunications",
                     GroupCode = "611",
                     GroupDescription = "Wired telecommunications activities"
                 },
@@ -1547,7 +1547,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "J",
                     Section = "Information And Communication",
                     DivisionCode = "61",
-                    Description = "Telecommunications",
+                    DivisionDescription = "Telecommunications",
                     GroupCode = "612",
                     GroupDescription = "Wireless telecommunications activities"
                 },
@@ -1556,7 +1556,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "J",
                     Section = "Information And Communication",
                     DivisionCode = "61",
-                    Description = "Telecommunications",
+                    DivisionDescription = "Telecommunications",
                     GroupCode = "613",
                     GroupDescription = "Satellite telecommunications activities"
                 },
@@ -1565,7 +1565,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "J",
                     Section = "Information And Communication",
                     DivisionCode = "61",
-                    Description = "Telecommunications",
+                    DivisionDescription = "Telecommunications",
                     GroupCode = "619",
                     GroupDescription = "Other telecommunications activities"
                 },
@@ -1576,7 +1576,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "J",
                     Section = "Information And Communication",
                     DivisionCode = "62",
-                    Description = "Computer programming, consultancy and related activities",
+                    DivisionDescription = "Computer programming, consultancy and related activities",
                     GroupCode = "620",
                     GroupDescription = "Computer programming, consultancy and related activities"
                 },
@@ -1587,7 +1587,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "J",
                     Section = "Information And Communication",
                     DivisionCode = "63",
-                    Description = "Information service activities",
+                    DivisionDescription = "Information service activities",
                     GroupCode = "631",
                     GroupDescription = "Data processing, hosting and related activities; web portals"
                 },
@@ -1596,7 +1596,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "J",
                     Section = "Information And Communication",
                     DivisionCode = "63",
-                    Description = "Information service activities",
+                    DivisionDescription = "Information service activities",
                     GroupCode = "639",
                     GroupDescription = "Other information service activities"
                 },
@@ -1610,7 +1610,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "K",
                     Section = "Financial And Insurance /Takaful Activities",
                     DivisionCode = "64",
-                    Description = "Financial Service Activities, Except Insurance/ Takaful And Pension Funding",
+                    DivisionDescription = "Financial Service Activities, Except Insurance/ Takaful And Pension Funding",
                     GroupCode = "641",
                     GroupDescription = "Monetary intermediation"
                 },
@@ -1619,7 +1619,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "K",
                     Section = "Financial And Insurance /Takaful Activities",
                     DivisionCode = "64",
-                    Description = "Financial Service Activities, Except Insurance/ Takaful And Pension Funding",
+                    DivisionDescription = "Financial Service Activities, Except Insurance/ Takaful And Pension Funding",
                     GroupCode = "642",
                     GroupDescription = "Activities of holding companies"
                 },
@@ -1628,7 +1628,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "K",
                     Section = "Financial And Insurance /Takaful Activities",
                     DivisionCode = "64",
-                    Description = "Financial Service Activities, Except Insurance/ Takaful And Pension Funding",
+                    DivisionDescription = "Financial Service Activities, Except Insurance/ Takaful And Pension Funding",
                     GroupCode = "643",
                     GroupDescription = "Trusts, funds and similar financial entities"
                 },
@@ -1637,7 +1637,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "K",
                     Section = "Financial And Insurance /Takaful Activities",
                     DivisionCode = "64",
-                    Description = "Financial Service Activities, Except Insurance/ Takaful And Pension Funding",
+                    DivisionDescription = "Financial Service Activities, Except Insurance/ Takaful And Pension Funding",
                     GroupCode = "649",
                     GroupDescription = "Other financial service activities, except insurance/takaful and pension funding activities"
                 },
@@ -1648,7 +1648,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "K",
                     Section = "Financial And Insurance /Takaful Activities",
                     DivisionCode = "65",
-                    Description = "Insurance/takaful, reinsurance/retakaful and pension funding, except compulsory social security",
+                    DivisionDescription = "Insurance/takaful, reinsurance/retakaful and pension funding, except compulsory social security",
                     GroupCode = "652",
                     GroupDescription = "Insurance/takaful"
                 },
@@ -1657,7 +1657,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "K",
                     Section = "Financial And Insurance /Takaful Activities",
                     DivisionCode = "65",
-                    Description = "Insurance/takaful, reinsurance/retakaful and pension funding, except compulsory social security",
+                    DivisionDescription = "Insurance/takaful, reinsurance/retakaful and pension funding, except compulsory social security",
                     GroupCode = "651",
                     GroupDescription = "Reinsurance/retakaful"
                 },
@@ -1666,7 +1666,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "K",
                     Section = "Financial And Insurance /Takaful Activities",
                     DivisionCode = "65",
-                    Description = "Insurance/takaful, reinsurance/retakaful and pension funding, except compulsory social security",
+                    DivisionDescription = "Insurance/takaful, reinsurance/retakaful and pension funding, except compulsory social security",
                     GroupCode = "653",
                     GroupDescription = "Pension funding"
                 },
@@ -1677,7 +1677,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "K",
                     Section = "Financial And Insurance /Takaful Activities",
                     DivisionCode = "66",
-                    Description = "Activities auxiliary to financial service and insurance/ takaful activities",
+                    DivisionDescription = "Activities auxiliary to financial service and insurance/ takaful activities",
                     GroupCode = "661",
                     GroupDescription = "Activities auxiliary to financial service activities, except insurance/takaful and pension funding"
                 },
@@ -1686,7 +1686,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "K",
                     Section = "Financial And Insurance /Takaful Activities",
                     DivisionCode = "66",
-                    Description = "Activities auxiliary to financial service and insurance/ takaful activities",
+                    DivisionDescription = "Activities auxiliary to financial service and insurance/ takaful activities",
                     GroupCode = "662",
                     GroupDescription = "Activities auxiliary to insurance/takaful and pension funding"
                 },
@@ -1695,7 +1695,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "K",
                     Section = "Financial And Insurance /Takaful Activities",
                     DivisionCode = "66",
-                    Description = "Activities auxiliary to financial service and insurance/ takaful activities",
+                    DivisionDescription = "Activities auxiliary to financial service and insurance/ takaful activities",
                     GroupCode = "663",
                     GroupDescription = "Fund management activities"
                 },
@@ -1708,7 +1708,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "L",
                     Section = "Real Estate Activities",
                     DivisionCode = "68",
-                    Description = "Real estate activities",
+                    DivisionDescription = "Real estate activities",
                     GroupCode = "681",
                     GroupDescription = "Real estate activities with own or leased property"
                 },
@@ -1717,7 +1717,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "L",
                     Section = "Real Estate Activities",
                     DivisionCode = "68",
-                    Description = "Real estate activities",
+                    DivisionDescription = "Real estate activities",
                     GroupCode = "682",
                     GroupDescription = "Real estate activities on a fee or contract basis"
                 },
@@ -1730,7 +1730,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "M",
                     Section = "Professional, Scientific And Technical Activities",
                     DivisionCode = "69",
-                    Description = "Legal and accounting activities",
+                    DivisionDescription = "Legal and accounting activities",
                     GroupCode = "691",
                     GroupDescription = "Legal activities"
                 },
@@ -1739,7 +1739,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "M",
                     Section = "Professional, Scientific And Technical Activities",
                     DivisionCode = "69",
-                    Description = "Legal and accounting activities",
+                    DivisionDescription = "Legal and accounting activities",
                     GroupCode = "692",
                     GroupDescription = "Accounting, bookkeeping and auditing activities; tax consultancy"
                 },
@@ -1750,7 +1750,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "M",
                     Section = "Professional, Scientific And Technical Activities",
                     DivisionCode = "70",
-                    Description = "Activities of head offices; management consultancy activities",
+                    DivisionDescription = "Activities of head offices; management consultancy activities",
                     GroupCode = "701",
                     GroupDescription = "Activities of head offices"
                 },
@@ -1759,7 +1759,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "M",
                     Section = "Professional, Scientific And Technical Activities",
                     DivisionCode = "70",
-                    Description = "Activities of head offices; management consultancy activities",
+                    DivisionDescription = "Activities of head offices; management consultancy activities",
                     GroupCode = "702",
                     GroupDescription = "Management consultancy activities"
                 },
@@ -1770,7 +1770,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "M",
                     Section = "Professional, Scientific And Technical Activities",
                     DivisionCode = "71",
-                    Description = "Architectural and engineering activities; technical testing and analysis",
+                    DivisionDescription = "Architectural and engineering activities; technical testing and analysis",
                     GroupCode = "711",
                     GroupDescription = "Architectural and engineering activities and related technical consultancy"
                 },
@@ -1779,7 +1779,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "M",
                     Section = "Professional, Scientific And Technical Activities",
                     DivisionCode = "71",
-                    Description = "Architectural and engineering activities; technical testing and analysis",
+                    DivisionDescription = "Architectural and engineering activities; technical testing and analysis",
                     GroupCode = "712",
                     GroupDescription = "Technical testing and analysis"
                 },
@@ -1790,7 +1790,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "M",
                     Section = "Professional, Scientific And Technical Activities",
                     DivisionCode = "72",
-                    Description = "Scientific research and development",
+                    DivisionDescription = "Scientific research and development",
                     GroupCode = "721",
                     GroupDescription = "Research and experimental development on natural sciences and engineering"
                 },
@@ -1799,7 +1799,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "M",
                     Section = "Professional, Scientific And Technical Activities",
                     DivisionCode = "72",
-                    Description = "Scientific research and development",
+                    DivisionDescription = "Scientific research and development",
                     GroupCode = "722",
                     GroupDescription = "Research and experimental development on social sciences and humanities"
                 },
@@ -1810,7 +1810,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "M",
                     Section = "Professional, Scientific And Technical Activities",
                     DivisionCode = "73",
-                    Description = "Advertising and market research",
+                    DivisionDescription = "Advertising and market research",
                     GroupCode = "731",
                     GroupDescription = "Advertising"
                 },
@@ -1819,7 +1819,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "M",
                     Section = "Professional, Scientific And Technical Activities",
                     DivisionCode = "73",
-                    Description = "Advertising and market research",
+                    DivisionDescription = "Advertising and market research",
                     GroupCode = "732",
                     GroupDescription = "Market research and public opinion polling"
                 },
@@ -1830,7 +1830,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "M",
                     Section = "Professional, Scientific And Technical Activities",
                     DivisionCode = "74",
-                    Description = "Other professional, scientific and technical activities",
+                    DivisionDescription = "Other professional, scientific and technical activities",
                     GroupCode = "741",
                     GroupDescription = "Specialized design activities"
                 },
@@ -1839,7 +1839,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "M",
                     Section = "Professional, Scientific And Technical Activities",
                     DivisionCode = "74",
-                    Description = "Other professional, scientific and technical activities",
+                    DivisionDescription = "Other professional, scientific and technical activities",
                     GroupCode = "742",
                     GroupDescription = "Photographic activities"
                 },
@@ -1848,7 +1848,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "M",
                     Section = "Professional, Scientific And Technical Activities",
                     DivisionCode = "74",
-                    Description = "Other professional, scientific and technical activities",
+                    DivisionDescription = "Other professional, scientific and technical activities",
                     GroupCode = "749",
                     GroupDescription = "Other professional, scientific and technical activities n.e.c."
                 },
@@ -1859,7 +1859,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "M",
                     Section = "Professional, Scientific And Technical Activities",
                     DivisionCode = "75",
-                    Description = "Veterinary activities",
+                    DivisionDescription = "Veterinary activities",
                     GroupCode = "750",
                     GroupDescription = "Veterinary activities"
                 },
@@ -1872,7 +1872,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "N",
                     Section = "Administrative And Support Service Activities",
                     DivisionCode = "77",
-                    Description = "Rental and leasing activities",
+                    DivisionDescription = "Rental and leasing activities",
                     GroupCode = "771",
                     GroupDescription = "Renting and leasing of motor vehicles"
                 },
@@ -1881,7 +1881,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "N",
                     Section = "Administrative And Support Service Activities",
                     DivisionCode = "77",
-                    Description = "Rental and leasing activities",
+                    DivisionDescription = "Rental and leasing activities",
                     GroupCode = "772",
                     GroupDescription = "Renting and leasing of personal and household goods"
                 },
@@ -1890,7 +1890,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "N",
                     Section = "Administrative And Support Service Activities",
                     DivisionCode = "77",
-                    Description = "Rental and leasing activities",
+                    DivisionDescription = "Rental and leasing activities",
                     GroupCode = "773",
                     GroupDescription = "Renting and leasing of other machinery, equipment and tangible goods"
                 },
@@ -1899,7 +1899,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "N",
                     Section = "Administrative And Support Service Activities",
                     DivisionCode = "77",
-                    Description = "Rental and leasing activities",
+                    DivisionDescription = "Rental and leasing activities",
                     GroupCode = "774",
                     GroupDescription = "Leasing of intellectual property and similar products, except copyrighted works"
                 },
@@ -1910,7 +1910,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "N",
                     Section = "Administrative And Support Service Activities",
                     DivisionCode = "78",
-                    Description = "Employment activities",
+                    DivisionDescription = "Employment activities",
                     GroupCode = "781",
                     GroupDescription = "Activities of employment placement agencies"
                 },
@@ -1919,7 +1919,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "N",
                     Section = "Administrative And Support Service Activities",
                     DivisionCode = "78",
-                    Description = "Employment activities",
+                    DivisionDescription = "Employment activities",
                     GroupCode = "782",
                     GroupDescription = "Temporary employment agency activities"
                 },
@@ -1928,7 +1928,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "N",
                     Section = "Administrative And Support Service Activities",
                     DivisionCode = "78",
-                    Description = "Employment activities",
+                    DivisionDescription = "Employment activities",
                     GroupCode = "783",
                     GroupDescription = "Other human resources provision"
                 },
@@ -1939,7 +1939,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "N",
                     Section = "Administrative And Support Service Activities",
                     DivisionCode = "79",
-                    Description = "Travel agency, tour operator, reservation service and related activities",
+                    DivisionDescription = "Travel agency, tour operator, reservation service and related activities",
                     GroupCode = "791",
                     GroupDescription = "Travel agency and tour operator activities"
                 },
@@ -1948,7 +1948,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "N",
                     Section = "Administrative And Support Service Activities",
                     DivisionCode = "79",
-                    Description = "Travel agency, tour operator, reservation service and related activities",
+                    DivisionDescription = "Travel agency, tour operator, reservation service and related activities",
                     GroupCode = "799",
                     GroupDescription = "Other reservation service and related activities"
                 },
@@ -1959,7 +1959,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "N",
                     Section = "Administrative And Support Service Activities",
                     DivisionCode = "80",
-                    Description = "Security and investigation activities",
+                    DivisionDescription = "Security and investigation activities",
                     GroupCode = "801",
                     GroupDescription = "Private security activities"
                 },
@@ -1968,7 +1968,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "N",
                     Section = "Administrative And Support Service Activities",
                     DivisionCode = "80",
-                    Description = "Security and investigation activities",
+                    DivisionDescription = "Security and investigation activities",
                     GroupCode = "802",
                     GroupDescription = "Security systems service activities"
                 },
@@ -1977,7 +1977,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "N",
                     Section = "Administrative And Support Service Activities",
                     DivisionCode = "80",
-                    Description = "Security and investigation activities",
+                    DivisionDescription = "Security and investigation activities",
                     GroupCode = "803",
                     GroupDescription = "Investigation activities"
                 },
@@ -1988,7 +1988,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "N",
                     Section = "Administrative And Support Service Activities",
                     DivisionCode = "81",
-                    Description = "Services to buildings and landscape activities",
+                    DivisionDescription = "Services to buildings and landscape activities",
                     GroupCode = "811",
                     GroupDescription = "Combined facilities support activities"
                 },
@@ -1997,7 +1997,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "N",
                     Section = "Administrative And Support Service Activities",
                     DivisionCode = "81",
-                    Description = "Services to buildings and landscape activities",
+                    DivisionDescription = "Services to buildings and landscape activities",
                     GroupCode = "812",
                     GroupDescription = "Cleaning activities"
                 },
@@ -2006,7 +2006,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "N",
                     Section = "Administrative And Support Service Activities",
                     DivisionCode = "81",
-                    Description = "Services to buildings and landscape activities",
+                    DivisionDescription = "Services to buildings and landscape activities",
                     GroupCode = "813",
                     GroupDescription = "Landscape care and maintenance service activities"
                 },
@@ -2018,7 +2018,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "N",
                     Section = "Administrative And Support Service Activities",
                     DivisionCode = "82",
-                    Description = "Office administrative, office support and other business support activities",
+                    DivisionDescription = "Office administrative, office support and other business support activities",
                     GroupCode = "821",
                     GroupDescription = "Office administrative and support activities"
                 },
@@ -2027,7 +2027,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "N",
                     Section = "Administrative And Support Service Activities",
                     DivisionCode = "82",
-                    Description = "Office administrative, office support and other business support activities",
+                    DivisionDescription = "Office administrative, office support and other business support activities",
                     GroupCode = "822",
                     GroupDescription = "Activities of call centres"
                 },
@@ -2036,7 +2036,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "N",
                     Section = "Administrative And Support Service Activities",
                     DivisionCode = "82",
-                    Description = "Office administrative, office support and other business support activities",
+                    DivisionDescription = "Office administrative, office support and other business support activities",
                     GroupCode = "823",
                     GroupDescription = "Organization of conventions and trade shows"
                 },
@@ -2045,7 +2045,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "N",
                     Section = "Administrative And Support Service Activities",
                     DivisionCode = "82",
-                    Description = "Office administrative, office support and other business support activities",
+                    DivisionDescription = "Office administrative, office support and other business support activities",
                     GroupCode = "829",
                     GroupDescription = "Business support service activities n.e.c."
                 },
@@ -2059,7 +2059,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "O",
                     Section = "Public Administration And Defence; Compulsory Social Security",
                     DivisionCode = "84",
-                    Description = "Public administration and defence; compulsory social security",
+                    DivisionDescription = "Public administration and defence; compulsory social security",
                     GroupCode = "841",
                     GroupDescription = "Administration of the State and the economic and social policy of the community"
                 },
@@ -2068,7 +2068,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "O",
                     Section = "Public Administration And Defence; Compulsory Social Security",
                     DivisionCode = "84",
-                    Description = "Public administration and defence; compulsory social security",
+                    DivisionDescription = "Public administration and defence; compulsory social security",
                     GroupCode = "842",
                     GroupDescription = "Provision of services to the community as a whole"
                 },
@@ -2077,7 +2077,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "O",
                     Section = "Public Administration And Defence; Compulsory Social Security",
                     DivisionCode = "84",
-                    Description = "Public administration and defence; compulsory social security",
+                    DivisionDescription = "Public administration and defence; compulsory social security",
                     GroupCode = "843",
                     GroupDescription = "Compulsory social security activities"
                 },
@@ -2090,7 +2090,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "P",
                     Section = "Education",
                     DivisionCode = "85",
-                    Description = "Education",
+                    DivisionDescription = "Education",
                     GroupCode = "851",
                     GroupDescription = "Pre-primary and primary education"
                 },
@@ -2099,7 +2099,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "P",
                     Section = "Education",
                     DivisionCode = "85",
-                    Description = "Education",
+                    DivisionDescription = "Education",
                     GroupCode = "852",
                     GroupDescription = "Secondary education"
                 },
@@ -2108,7 +2108,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "P",
                     Section = "Education",
                     DivisionCode = "85",
-                    Description = "Education",
+                    DivisionDescription = "Education",
                     GroupCode = "853",
                     GroupDescription = "Higher education"
                 },
@@ -2117,7 +2117,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "P",
                     Section = "Education",
                     DivisionCode = "85",
-                    Description = "Education",
+                    DivisionDescription = "Education",
                     GroupCode = "854",
                     GroupDescription = "Other education"
                 },
@@ -2126,7 +2126,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "P",
                     Section = "Education",
                     DivisionCode = "85",
-                    Description = "Education",
+                    DivisionDescription = "Education",
                     GroupCode = "855",
                     GroupDescription = "Educational support activities"
                 },
@@ -2139,7 +2139,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "Q",
                     Section = "Human Health And Social Work Activities",
                     DivisionCode = "86",
-                    Description = "Human health activities",
+                    DivisionDescription = "Human health activities",
                     GroupCode = "861",
                     GroupDescription = "Hospital activities"
                 },
@@ -2148,7 +2148,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "Q",
                     Section = "Human Health And Social Work Activities",
                     DivisionCode = "86",
-                    Description = "Human health activities",
+                    DivisionDescription = "Human health activities",
                     GroupCode = "862",
                     GroupDescription = "Medical and dental practice activities"
                 },
@@ -2157,7 +2157,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "Q",
                     Section = "Human Health And Social Work Activities",
                     DivisionCode = "86",
-                    Description = "Human health activities",
+                    DivisionDescription = "Human health activities",
                     GroupCode = "869",
                     GroupDescription = "Other human health activities"
                 },
@@ -2168,7 +2168,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "Q",
                     Section = "Human Health And Social Work Activities",
                     DivisionCode = "87",
-                    Description = "Residential care activities",
+                    DivisionDescription = "Residential care activities",
                     GroupCode = "871",
                     GroupDescription = "Residential nursing care facilities"
                 },
@@ -2177,7 +2177,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "Q",
                     Section = "Human Health And Social Work Activities",
                     DivisionCode = "87",
-                    Description = "Residential care activities",
+                    DivisionDescription = "Residential care activities",
                     GroupCode = "872",
                     GroupDescription = "Residential care activities for mental retardation, mental health and substance abuse"
                 },
@@ -2186,7 +2186,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "Q",
                     Section = "Human Health And Social Work Activities",
                     DivisionCode = "87",
-                    Description = "Residential care activities",
+                    DivisionDescription = "Residential care activities",
                     GroupCode = "873",
                     GroupDescription = "Residential care activities for the elderly and disabled"
                 },
@@ -2195,7 +2195,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "Q",
                     Section = "Human Health And Social Work Activities",
                     DivisionCode = "87",
-                    Description = "Residential care activities",
+                    DivisionDescription = "Residential care activities",
                     GroupCode = "879",
                     GroupDescription = "Other residential care activities"
                 },
@@ -2206,7 +2206,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "Q",
                     Section = "Human Health And Social Work Activities",
                     DivisionCode = "88",
-                    Description = "Social work activities without accommodation",
+                    DivisionDescription = "Social work activities without accommodation",
                     GroupCode = "881",
                     GroupDescription = "Social work activities without accommodation for the elderly and disabled"
                 },
@@ -2215,7 +2215,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "Q",
                     Section = "Human Health And Social Work Activities",
                     DivisionCode = "88",
-                    Description = "Social work activities without accommodation",
+                    DivisionDescription = "Social work activities without accommodation",
                     GroupCode = "889",
                     GroupDescription = "Other social work activities without accommodation n.e.c."
                 },
@@ -2228,7 +2228,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "R",
                     Section = "Arts, Entertainment And Recreation",
                     DivisionCode = "90",
-                    Description = "Creative, arts and entertainment activities",
+                    DivisionDescription = "Creative, arts and entertainment activities",
                     GroupCode = "900",
                     GroupDescription = "Creative, arts and entertainment activities"
                 },
@@ -2240,7 +2240,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "R",
                     Section = "Arts, Entertainment And Recreation",
                     DivisionCode = "91",
-                    Description = "Creative, arts and entertainment activities",
+                    DivisionDescription = "Creative, arts and entertainment activities",
                     GroupCode = "910",
                     GroupDescription = "Libraries, archives, museums and other cultural activities"
                 },
@@ -2251,7 +2251,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "R",
                     Section = "Arts, Entertainment And Recreation",
                     DivisionCode = "92",
-                    Description = "Gambling and betting activities",
+                    DivisionDescription = "Gambling and betting activities",
                     GroupCode = "920",
                     GroupDescription = "Gambling and betting activities"
                 },
@@ -2262,7 +2262,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "R",
                     Section = "Arts, Entertainment And Recreation",
                     DivisionCode = "93",
-                    Description = "Sports activities and amusement and recreation activities",
+                    DivisionDescription = "Sports activities and amusement and recreation activities",
                     GroupCode = "931",
                     GroupDescription = "Sports activities"
                 },
@@ -2271,7 +2271,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "R",
                     Section = "Arts, Entertainment And Recreation",
                     DivisionCode = "93",
-                    Description = "Sports activities and amusement and recreation activities",
+                    DivisionDescription = "Sports activities and amusement and recreation activities",
                     GroupCode = "932",
                     GroupDescription = "Other amusement and recreation activities"
                 },
@@ -2285,7 +2285,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "S",
                     Section = "Other Service Activities",
                     DivisionCode = "94",
-                    Description = "Activities of membership organizations",
+                    DivisionDescription = "Activities of membership organizations",
                     GroupCode = "941",
                     GroupDescription = "Activities of business, employers and professional membership organizations"
                 },
@@ -2294,7 +2294,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "S",
                     Section = "Other Service Activities",
                     DivisionCode = "94",
-                    Description = "Activities of membership organizations",
+                    DivisionDescription = "Activities of membership organizations",
                     GroupCode = "942",
                     GroupDescription = "Activities of trade unions"
                 },
@@ -2303,7 +2303,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "S",
                     Section = "Other Service Activities",
                     DivisionCode = "94",
-                    Description = "Activities of membership organizations",
+                    DivisionDescription = "Activities of membership organizations",
                     GroupCode = "949",
                     GroupDescription = "Activities of other membership organizations"
                 },
@@ -2314,7 +2314,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "S",
                     Section = "Other Service Activities",
                     DivisionCode = "95",
-                    Description = "Repair of computers and personal and household goods",
+                    DivisionDescription = "Repair of computers and personal and household goods",
                     GroupCode = "951",
                     GroupDescription = "Repair of computers and communication equipment"
                 },
@@ -2323,7 +2323,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "S",
                     Section = "Other Service Activities",
                     DivisionCode = "95",
-                    Description = "Repair of computers and personal and household goods",
+                    DivisionDescription = "Repair of computers and personal and household goods",
                     GroupCode = "952",
                     GroupDescription = "Repair of personal and household goods"
                 },
@@ -2334,7 +2334,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "S",
                     Section = "Other Service Activities",
                     DivisionCode = "96",
-                    Description = "Other personal service activities",
+                    DivisionDescription = "Other personal service activities",
                     GroupCode = "960",
                     GroupDescription = "Other personal service activities"
                 },
@@ -2348,7 +2348,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "T",
                     Section = "Activities of Households As Employers; Undifferentiated Goods And Services Producing Activities Of Households For Own use",
                     DivisionCode = "97",
-                    Description = "Activities of households as employers of domestic personnel",
+                    DivisionDescription = "Activities of households as employers of domestic personnel",
                     GroupCode = "970",
                     GroupDescription = "Activities of households as employers of domestic personnel"
                 },
@@ -2359,7 +2359,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "T",
                     Section = "Activities of Households As Employers; Undifferentiated Goods And Services Producing Activities Of Households For Own use",
                     DivisionCode = "98",
-                    Description = "Undifferentiated goods and services producing activities of private households for own use",
+                    DivisionDescription = "Undifferentiated goods and services producing activities of private households for own use",
                     GroupCode = "981",
                     GroupDescription = "Undifferentiated goods-producing activities of private households for own use"
                 },
@@ -2368,7 +2368,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "T",
                     Section = "Activities of Households As Employers; Undifferentiated Goods And Services Producing Activities Of Households For Own use",
                     DivisionCode = "98",
-                    Description = "Undifferentiated goods and services producing activities of private households for own use",
+                    DivisionDescription = "Undifferentiated goods and services producing activities of private households for own use",
                     GroupCode = "982",
                     GroupDescription = "Undifferentiated service-producing activities of private households for own use"
                 },
@@ -2382,7 +2382,7 @@ namespace AAS_Modeling.Factory
                     SectionCode = "U",
                     Section = "Activities Of Extraterrotorial Organizations And Bodies",
                     DivisionCode = "99",
-                    Description = "Activities of extraterritorial organizations and bodies",
+                    DivisionDescription = "Activities of extraterritorial organizations and bodies",
                     GroupCode = "990",
                     GroupDescription = "Activities of extraterritorial organizations and bodies"
                 },

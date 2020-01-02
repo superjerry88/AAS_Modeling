@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using AAS_Modeling.Core;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 
 namespace AAS_Modeling
 {

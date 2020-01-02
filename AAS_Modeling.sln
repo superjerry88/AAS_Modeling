@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29509.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AAS_Modeling", "AAS_Modeling\AAS_Modeling.csproj", "{DF4D49A8-7B82-402E-A22B-4E7C1CA8BCFC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AAS_Testrunner", "AAS_Modeling\AAS_Testrunner.csproj", "{DF4D49A8-7B82-402E-A22B-4E7C1CA8BCFC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AASTool", "AASTool\AASTool.csproj", "{21FEA401-5FD0-43C3-BAFD-D48AF952B825}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AAS_Core", "AAS_Core\AAS_Core.csproj", "{C346D75A-B1FC-4A5D-B8BF-9C7FC25F463B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{21FEA401-5FD0-43C3-BAFD-D48AF952B825}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21FEA401-5FD0-43C3-BAFD-D48AF952B825}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21FEA401-5FD0-43C3-BAFD-D48AF952B825}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C346D75A-B1FC-4A5D-B8BF-9C7FC25F463B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C346D75A-B1FC-4A5D-B8BF-9C7FC25F463B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C346D75A-B1FC-4A5D-B8BF-9C7FC25F463B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C346D75A-B1FC-4A5D-B8BF-9C7FC25F463B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

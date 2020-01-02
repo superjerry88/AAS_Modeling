@@ -33,7 +33,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cb_section = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
@@ -44,9 +44,9 @@
             this.label7 = new System.Windows.Forms.Label();
             this.comboBox7 = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
+            this.cb_division = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
+            this.cb_group = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -101,13 +101,14 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "MSIC Section:";
             // 
-            // comboBox2
+            // cb_section
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(116, 84);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(237, 21);
-            this.comboBox2.TabIndex = 6;
+            this.cb_section.FormattingEnabled = true;
+            this.cb_section.Location = new System.Drawing.Point(116, 84);
+            this.cb_section.Name = "cb_section";
+            this.cb_section.Size = new System.Drawing.Size(237, 21);
+            this.cb_section.TabIndex = 6;
+            this.cb_section.SelectedIndexChanged += new System.EventHandler(this.cb_section_SelectedIndexChanged);
             // 
             // comboBox3
             // 
@@ -194,13 +195,14 @@
             this.label8.TabIndex = 15;
             this.label8.Text = "Process:";
             // 
-            // comboBox8
+            // cb_division
             // 
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Location = new System.Drawing.Point(116, 111);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(237, 21);
-            this.comboBox8.TabIndex = 18;
+            this.cb_division.FormattingEnabled = true;
+            this.cb_division.Location = new System.Drawing.Point(116, 111);
+            this.cb_division.Name = "cb_division";
+            this.cb_division.Size = new System.Drawing.Size(237, 21);
+            this.cb_division.TabIndex = 18;
+            this.cb_division.SelectedIndexChanged += new System.EventHandler(this.cb_division_SelectedIndexChanged);
             // 
             // label9
             // 
@@ -211,13 +213,13 @@
             this.label9.TabIndex = 17;
             this.label9.Text = "MSIC Division:";
             // 
-            // comboBox9
+            // cb_group
             // 
-            this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Location = new System.Drawing.Point(116, 138);
-            this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(237, 21);
-            this.comboBox9.TabIndex = 20;
+            this.cb_group.FormattingEnabled = true;
+            this.cb_group.Location = new System.Drawing.Point(116, 138);
+            this.cb_group.Name = "cb_group";
+            this.cb_group.Size = new System.Drawing.Size(237, 21);
+            this.cb_group.TabIndex = 20;
             // 
             // label10
             // 
@@ -281,9 +283,9 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox9);
+            this.Controls.Add(this.cb_group);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.comboBox8);
+            this.Controls.Add(this.cb_division);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.comboBox7);
             this.Controls.Add(this.label8);
@@ -295,7 +297,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.cb_section);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label1);
@@ -303,6 +305,7 @@
             this.Controls.Add(this.label2);
             this.Name = "IraiCreator";
             this.Size = new System.Drawing.Size(695, 725);
+            this.Load += new System.EventHandler(this.IraiCreator_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -315,7 +318,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cb_section;
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox comboBox4;
@@ -326,9 +329,9 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox comboBox7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox comboBox8;
+        private System.Windows.Forms.ComboBox cb_division;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox comboBox9;
+        private System.Windows.Forms.ComboBox cb_group;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
