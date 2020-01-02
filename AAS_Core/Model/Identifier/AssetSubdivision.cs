@@ -1,6 +1,6 @@
 ﻿using MongoDB.Bson.Serialization.Attributes;
 
-namespace AAS_Modeling.Model.Identifier
+namespace AAS_Core.Model.Identifier
 {
     public class AssetSubdivision //global
     {

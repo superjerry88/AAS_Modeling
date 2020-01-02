@@ -1,9 +1,9 @@
 ﻿using System;
-using AAS_Modeling.Model.Enum;
-using AAS_Modeling.Model.Identifier;
+using AAS_Core.Model.Enum;
+using AAS_Core.Model.Identifier;
 using MongoDB.Bson.Serialization.Attributes;
 
-namespace AAS_Modeling.Model.Assets
+namespace AAS_Core.Model.Assets
 {
     [BsonIgnoreExtraElements]
     public class BaseAsset

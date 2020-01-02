@@ -1,4 +1,6 @@
-﻿namespace AAS_Modeling
+﻿using AAS_Core.Model.Assets;
+
+namespace AAS_Core.Model.Sample
 {
     public class WaterTankGeneratorSpec
     {

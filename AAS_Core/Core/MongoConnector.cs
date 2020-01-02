@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using AAS_Modeling.Factory;
-using AAS_Modeling.Model.Assets;
-using AAS_Modeling.Model.Identifier;
-using MongoDB.Bson;
+﻿using System.Collections.Generic;
+using AAS_Core.Factory;
+using AAS_Core.Model.Assets;
+using AAS_Core.Model.Identifier;
 using MongoDB.Driver;
 
-namespace AAS_Modeling.Core
+namespace AAS_Core.Core
 {
     class MongoConnector
     {
@@ -51,7 +48,7 @@ namespace AAS_Modeling.Core
             var client = new MongoClient(Url);
             var db = client.GetDatabase(DatabaseName);
             var collection = db.GetCollection<AssetSubdivision>(IraiSubdivisionCollection);
-            collection.InsertMany(AssetSubdivisionFactory.GenerateAssetSubdivisionsWithoutItem());
+            collection.InsertMany(AssetSubdivisionFactory.GroupSubdivision());
         }
     }
 }

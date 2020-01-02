@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using AAS_Modeling.Model.Identifier;
+﻿using System.Collections.Generic;
+using AAS_Core.Model.Identifier;
 
-namespace AAS_Modeling.Factory
+namespace AAS_Core.Factory
 {
     class AssetOwnerFactory
     {

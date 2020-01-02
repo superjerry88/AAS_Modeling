@@ -1,19 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Text;
-using AAS_Modeling.Model.Identifier;
+﻿using System.Collections.Generic;
+using AAS_Core.Model.Identifier;
+using AAS_Resource;
+using MongoDB.Bson;
 using Newtonsoft.Json;
 
-namespace AAS_Modeling.Factory
+namespace AAS_Core.Factory
 {
     public class AssetSubdivisionFactory
     {
+        private static List<AssetSubdivision> assetSubdivisions = new List<AssetSubdivision>();
+        private static string text = "";
         public static List<AssetSubdivision> GetAssetSubdivisions()
         {
-            return JsonConvert.DeserializeObject<List<AssetSubdivision>>(File.ReadAllText(AAS_Core));
+            if (assetSubdivisions.Count == 0)
+            {
+                text = Downloader.GetMISC();
+                assetSubdivisions = JsonConvert.DeserializeObject<List<AssetSubdivision>>(text);
+            }
+            return assetSubdivisions;
         }
-        public static List<AssetSubdivision> GenerateAssetSubdivisionsWithoutItem()
+        public static List<AssetSubdivision> GroupSubdivision()
         {
             return new List<AssetSubdivision>
             {

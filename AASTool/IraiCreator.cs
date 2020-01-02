@@ -7,12 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using AAS_Core;
-using AAS_Modeling;
-using AAS_Modeling.Factory;
-using AAS_Modeling.Model.Assets;
-using AAS_Modeling.Model.Enum;
-using AAS_Modeling.Model.Identifier;
+using AAS_Core.Factory;
+using AAS_Core.Model.Assets;
+using AAS_Core.Model.Enum;
+using AAS_Core.Model.Identifier;
 using MoreLinq;
 
 namespace AASTool

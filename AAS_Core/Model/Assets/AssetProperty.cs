@@ -1,4 +1,4 @@
-﻿namespace AAS_Modeling
+﻿namespace AAS_Core.Model.Assets
 {
     public class AssetProperty
     {

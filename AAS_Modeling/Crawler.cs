@@ -6,9 +6,8 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text;
-using AAS_Modeling;
-using AAS_Modeling.Factory;
-using AAS_Modeling.Model.Identifier;
+using AAS_Core.Factory;
+using AAS_Core.Model.Identifier;
 using HtmlAgilityPack;
 using MoreLinq;
 using Newtonsoft.Json;
@@ -17,7 +16,7 @@ namespace AAS_Testrunner
 {
     class Crawler
     {
-        private static readonly List<AssetSubdivision> Subdivisions = AssetSubdivisionFactory.GenerateAssetSubdivisionsWithoutItem();
+        private static readonly List<AssetSubdivision> Subdivisions = AssetSubdivisionFactory.GroupSubdivision();
         public static void Crawl()
         {
             var mainsw = Stopwatch.StartNew();

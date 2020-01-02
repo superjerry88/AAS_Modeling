@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AAS_Modeling
+namespace AAS_Core.Model.Sample
 {
     public class SensorData
     {

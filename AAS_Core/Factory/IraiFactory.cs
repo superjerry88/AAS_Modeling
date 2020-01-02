@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using AAS_Modeling.Model.Identifier;
+using AAS_Core.Model.Identifier;
 
-namespace AAS_Modeling.Factory
+namespace AAS_Core.Factory
 {
 
 
@@ -22,7 +21,7 @@ namespace AAS_Modeling.Factory
         {
             AssetDimensions = AssetDimensionFactory.GenerateDimensions();
             AssetOwners = AssetOwnerFactory.GenerateAssetOwners();
-            AssetSubdivisions = AssetSubdivisionFactory.GenerateAssetSubdivisionsWithoutItem();
+            AssetSubdivisions = AssetSubdivisionFactory.GroupSubdivision();
         }
 
         public void LoadFromDatabase()

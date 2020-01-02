@@ -1,14 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Globalization;
-using System.IO;
 using System.Linq;
-using AAS_Modeling.Factory;
-using AAS_Modeling.Model.Assets;
-using AAS_Modeling.Model.Enum;
-using AAS_Modeling.Model.Identifier;
+using AAS_Core.Factory;
+using AAS_Core.Model.Assets;
+using AAS_Core.Model.Enum;
+using AAS_Core.Model.Identifier;
+using AAS_Core.Model.Sample;
 
-namespace AAS_Modeling
+namespace AAS_Core
 {
     public class Helper
     {

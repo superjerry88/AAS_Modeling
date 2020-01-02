@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace AAS_Modeling.Model.Assets
+namespace AAS_Core.Model.Assets
 {
     public class LinkAsset : BaseAsset
     {

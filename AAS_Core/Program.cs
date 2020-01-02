@@ -1,9 +1,9 @@
 ﻿using System;
 using System.IO;
-using AAS_Modeling.Core;
+using AAS_Core.Core;
 using Newtonsoft.Json;
 
-namespace AAS_Modeling
+namespace AAS_Core
 {
     class Program
     {

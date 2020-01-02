@@ -1,17 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Net;
-using System.Text;
 
 namespace AAS_Resource
 {
-    class Downloader
+    public class Downloader
     {
-        public static string CheckNeedsUpdate()
+        public static string GetMISC()
         {
             using (var client = new WebClient())
             {
-                return client.DownloadString("https://raw.githubusercontent.com/goaaats/universalis_act_plugin/master/version");
+                return client.DownloadString("https://raw.githubusercontent.com/superjerry88/AAS_Modeling/master/AAS_Resource/Data/Latest/MISC.json");
 
             }
         }

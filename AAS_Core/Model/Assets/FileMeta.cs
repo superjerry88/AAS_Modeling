@@ -1,9 +1,8 @@
 ﻿using System;
 using System.IO;
 using MongoDB.Bson.Serialization.Attributes;
-using Newtonsoft.Json;
 
-namespace AAS_Modeling.Model.Assets
+namespace AAS_Core.Model.Assets
 {
     [BsonIgnoreExtraElements]
     public class FileMeta

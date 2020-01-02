@@ -1,4 +1,4 @@
-﻿namespace AAS_Modeling.Model.Enum
+﻿namespace AAS_Core.Model.Enum
 {
     public enum AssetKind
     {

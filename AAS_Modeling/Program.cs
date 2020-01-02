@@ -1,19 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using AAS_Modeling.Core;
-using AAS_Testrunner;
+using AAS_Core;
+using AAS_Core.Model.Identifier;
+using AAS_Resource;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 
-namespace AAS_Modeling
+namespace AAS_Testrunner
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Crawler.Crawl();
+           // Crawler.Crawl();
            // MongoHelper.CreateSubdivisionInDb();
+
+           var item = Newtonsoft.Json.JsonConvert.DeserializeObject<List<AssetSubdivision>>(Downloader.GetMISC());
+           foreach (var assetSubdivision in item)
+           {
+               Console.WriteLine(assetSubdivision.ItemCode);
+           }
             Console.WriteLine("Done");
             Console.Read();
         }
