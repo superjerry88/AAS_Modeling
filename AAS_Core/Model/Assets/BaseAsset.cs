@@ -1,9 +1,11 @@
 ﻿using System;
 using AAS_Modeling.Model.Enum;
 using AAS_Modeling.Model.Identifier;
+using MongoDB.Bson.Serialization.Attributes;
 
 namespace AAS_Modeling.Model.Assets
 {
+    [BsonIgnoreExtraElements]
     public class BaseAsset
     {
         public Irai Irai { get; set; }

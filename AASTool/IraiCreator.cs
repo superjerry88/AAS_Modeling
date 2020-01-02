@@ -20,6 +20,22 @@ namespace AASTool
         public IraiCreator()
         {
             InitializeComponent();
+            
+        }
+
+        private void cb_section_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cb_division_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cb_group_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
 
         private void IraiCreator_Load(object sender, EventArgs e)

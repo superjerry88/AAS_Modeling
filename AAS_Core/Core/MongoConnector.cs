@@ -37,6 +37,15 @@ namespace AAS_Modeling.Core
             //test
         }
 
+        public static List<BaseAsset> GetAllMetaFromDb()
+        {
+            var client = new MongoClient(Url);
+            var db = client.GetDatabase(DatabaseName);
+            var collection = db.GetCollection<BaseAsset>(AssetCollection);
+
+            return collection.AsQueryable().ToList();
+        }
+
         public static void CreateSubdivisionInDb()
         {
             var client = new MongoClient(Url);

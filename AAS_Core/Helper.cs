@@ -159,7 +159,7 @@ namespace AAS_Modeling
         {
             return new Irai
             {
-                AssetGeoLocation = new AssetGeoLocation("MY","Shah Alam", "40460 ", "3.008507", "101.520867"),
+                AssetGeoLocation = new AssetGeoLocation("MY", "40460", "Shah Alam ", "3.008507", "101.520867"),
                 AssetOrganization = new AssetOrganization
                 {
                     
@@ -172,7 +172,7 @@ namespace AAS_Modeling
                     IndustryCode = "C",
                     Website = "tarc.edu.my"
                 },
-                Subdivision = IraiFactory.Instance.AssetSubdivisions.First(),
+                Subdivision = IraiFactory.Instance.GetAssetSubdivisionByCode("C31"),
                 Dimension = IraiFactory.Instance.AssetDimensions.First(),
                 Owner = IraiFactory.Instance.AssetOwners.First(),
                 AssetCode = new AssetCode
