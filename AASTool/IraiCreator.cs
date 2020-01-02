@@ -8,7 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using AAS_Core;
+using AAS_Modeling;
 using AAS_Modeling.Factory;
+using AAS_Modeling.Model.Assets;
+using AAS_Modeling.Model.Enum;
 using AAS_Modeling.Model.Identifier;
 using MoreLinq;
 
@@ -23,20 +26,6 @@ namespace AASTool
             
         }
 
-        private void cb_section_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cb_division_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cb_group_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void IraiCreator_Load(object sender, EventArgs e)
         {
@@ -65,6 +54,36 @@ namespace AASTool
                 .DistinctBy(c => c.GroupDescription)
                 .Select(c => c.GroupDescription)
                 .ToList();
+        }
+
+        public  BaseAsset CreateBaseAsset()
+        {
+            return new BaseAsset
+            {
+                Irai = new Irai
+                {
+                    AssetGeoLocation = new AssetGeoLocation("country","zipcode","city","longtitude","latitude"),
+                    AssetCode = new AssetCode
+                    {
+                        //todo add more ...
+                    },
+                    AssetOrganization = new AssetOrganization
+                    {
+                        //todo add more ...
+                    },
+                    Dimension = new AssetDimension
+                    {
+                        //todo add more ...
+                    },
+                    //todo add more ...
+                },
+                AssetCategory = AssetCategory.Files,
+                Created = DateTime.Now,
+                LastUpdated = DateTime.Now,
+                FullName = "Asset FullName",  //todo add more ...
+                Description = "Asset Description", //todo add more ...
+                BrokerMeta = new BrokerMeta()
+            };
         }
     }
 }
