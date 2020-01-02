@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AASTool", "AASTool\AASTool.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AAS_Core", "AAS_Core\AAS_Core.csproj", "{C346D75A-B1FC-4A5D-B8BF-9C7FC25F463B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AAS_Resource", "AAS_Resource\AAS_Resource.csproj", "{45EE52F0-44F9-4BA2-9B2A-D293A27EC3C4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{C346D75A-B1FC-4A5D-B8BF-9C7FC25F463B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C346D75A-B1FC-4A5D-B8BF-9C7FC25F463B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C346D75A-B1FC-4A5D-B8BF-9C7FC25F463B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45EE52F0-44F9-4BA2-9B2A-D293A27EC3C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45EE52F0-44F9-4BA2-9B2A-D293A27EC3C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45EE52F0-44F9-4BA2-9B2A-D293A27EC3C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45EE52F0-44F9-4BA2-9B2A-D293A27EC3C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
