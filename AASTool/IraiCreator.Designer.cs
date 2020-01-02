@@ -284,6 +284,7 @@
             this.cb_item.Name = "cb_item";
             this.cb_item.Size = new System.Drawing.Size(237, 21);
             this.cb_item.TabIndex = 27;
+            this.cb_item.SelectedIndexChanged += new System.EventHandler(this.cb_item_SelectedIndexChanged);
             // 
             // label12
             // 

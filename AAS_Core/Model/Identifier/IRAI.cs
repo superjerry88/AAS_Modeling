@@ -6,13 +6,13 @@ namespace AAS_Core.Model.Identifier
     {
         public string FullCode =>
             $"0990-{AssetGeoLocation.IraiCode}{Subdivision.IraiCode}{AssetOrganization.IraiCode}-#{Dimension.IraiCode}-{AssetCode.IraiCode}#{LastestVersion.IraiCode}";
-        public AssetGeoLocation AssetGeoLocation { get; set; }
-        public AssetSubdivision Subdivision { get; set; }
-        public AssetOrganization AssetOrganization { get; set; }
-        public AssetOwner Owner { get; set; }
-        public AssetDimension Dimension { get; set; }
-        public AssetCode AssetCode { get; set; }
-        public AssetVersion LastestVersion { get; set; }
-        public List<AssetVersion> Versions { get; set; }
+        public AssetGeoLocation AssetGeoLocation { get; set; } = new AssetGeoLocation();
+        public AssetSubdivision Subdivision { get; set; } = new AssetSubdivision();
+        public AssetOrganization AssetOrganization { get; set; } = new AssetOrganization();
+        public AssetOwner Owner { get; set; } = new AssetOwner();
+        public AssetDimension Dimension { get; set; } = new AssetDimension();
+        public AssetCode AssetCode { get; set; } = new AssetCode();
+        public AssetVersion LastestVersion { get; set; } = new AssetVersion();
+        public List<AssetVersion> Versions { get; set; } = new List<AssetVersion>();
     }
 }

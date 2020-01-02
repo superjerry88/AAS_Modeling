@@ -29,6 +29,7 @@ namespace AASTool
                 .DistinctBy(c => c.Section)
                 .Select(c => c.Section)
                 .ToList();
+            UpdateIraiCode();
         }
 
         private void cb_section_SelectedIndexChanged(object sender, EventArgs e)
@@ -39,6 +40,7 @@ namespace AASTool
                 .DistinctBy(c => c.DivisionDescription)
                 .Select(c => c.DivisionDescription)
                 .ToList();
+            UpdateIraiCode();
         }
 
         private void cb_division_SelectedIndexChanged(object sender, EventArgs e)
@@ -49,6 +51,7 @@ namespace AASTool
                 .DistinctBy(c => c.GroupDescription)
                 .Select(c => c.GroupDescription)
                 .ToList();
+            UpdateIraiCode();
         }
 
         private void cb_group_SelectedIndexChanged(object sender, EventArgs e)
@@ -59,20 +62,31 @@ namespace AASTool
                 .DistinctBy(c => c.ItemCodeDescription)
                 .Select(c => c.ItemCodeDescription)
                 .ToList();
+            UpdateIraiCode();
         }
 
         private void cb_item_SelectedIndexChanged(object sender, EventArgs e)
         {
+            UpdateIraiCode();
+        }
 
+        private void UpdateIraiCode()
+        {
+            var baseAsset = CreateBaseAsset();
+            lbl_Irai.Text = baseAsset.Irai.FullCode;
         }
 
         public  BaseAsset CreateBaseAsset()
         {
+            var selectedAssetSubdivision = subdivisions
+                .First(c => c.ItemCodeDescription == cb_item.SelectedItem.ToString() &&
+                            c.DivisionDescription == cb_division.SelectedItem.ToString());
+
             return new BaseAsset
             {
                 Irai = new Irai
                 {
-                    AssetGeoLocation = new AssetGeoLocation("country from dropdown","zipcode","city","longtitude","latitude"),
+                    AssetGeoLocation = new AssetGeoLocation("MY","11111","city","longtitude","latitude"),
                     AssetCode = new AssetCode
                     {
                         //todo add more ...
@@ -85,6 +99,7 @@ namespace AASTool
                     {
                         //todo add more ...
                     },
+                    Subdivision = selectedAssetSubdivision
                     //todo add more ...
                 },
                 AssetCategory = AssetCategory.Files,
@@ -96,6 +111,6 @@ namespace AASTool
             };
         }
 
-
+       
     }
 }

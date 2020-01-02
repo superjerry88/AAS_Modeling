@@ -13,6 +13,10 @@ namespace AAS_Core.Model.Identifier
         public string Lontitude { get; set; }
         public string Latitude { get; set; }
 
+        public AssetGeoLocation()
+        {
+            
+        }
         public AssetGeoLocation(RegionInfo region)
         {
             CountryCode = region.TwoLetterISORegionName;
