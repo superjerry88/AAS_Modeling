@@ -1,13 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 using AAS_Modeling.Model.Identifier;
+using Newtonsoft.Json;
 
 namespace AAS_Modeling.Factory
 {
     public class AssetSubdivisionFactory
     {
-        public static List<AssetSubdivision> GenerateAssetSubdivisions()
+        public static List<AssetSubdivision> GetAssetSubdivisions()
+        {
+            return JsonConvert.DeserializeObject<List<AssetSubdivision>>(File.ReadAllText(AAS_Core));
+        }
+        public static List<AssetSubdivision> GenerateAssetSubdivisionsWithoutItem()
         {
             return new List<AssetSubdivision>
             {

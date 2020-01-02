@@ -7,6 +7,11 @@ namespace AAS_Modeling.Factory
 {
     class AssetDimensionFactory
     {
+        public static List<AssetDimension> GetFulListDimensions()
+        {
+            return new List<AssetDimension>();
+        }
+
         public static List<AssetDimension> GenerateDimensions()
         {
             return new List<AssetDimension>
@@ -151,7 +156,7 @@ namespace AAS_Modeling.Factory
                     Thrust = "Supply Chain Management",
                     ShiftFactor = "Process"
                 },
-                new AssetDimension 
+                new AssetDimension
                 {
                     IraiCode = "CS",
                     Dimensions = "Cybersecurity",
@@ -159,6 +164,9 @@ namespace AAS_Modeling.Factory
                     ShiftFactor = "Process"
                 },
             };
+
+
+
         }
     }
 }

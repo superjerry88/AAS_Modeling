@@ -51,7 +51,7 @@ namespace AAS_Modeling.Core
             var client = new MongoClient(Url);
             var db = client.GetDatabase(DatabaseName);
             var collection = db.GetCollection<AssetSubdivision>(IraiSubdivisionCollection);
-            collection.InsertMany(AssetSubdivisionFactory.GenerateAssetSubdivisions());
+            collection.InsertMany(AssetSubdivisionFactory.GenerateAssetSubdivisionsWithoutItem());
         }
     }
 }

@@ -22,7 +22,7 @@ namespace AAS_Modeling.Factory
         {
             AssetDimensions = AssetDimensionFactory.GenerateDimensions();
             AssetOwners = AssetOwnerFactory.GenerateAssetOwners();
-            AssetSubdivisions = AssetSubdivisionFactory.GenerateAssetSubdivisions();
+            AssetSubdivisions = AssetSubdivisionFactory.GenerateAssetSubdivisionsWithoutItem();
         }
 
         public void LoadFromDatabase()

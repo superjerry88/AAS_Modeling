@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using AAS_Modeling.Core;
+using AAS_Testrunner;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
@@ -11,14 +12,8 @@ namespace AAS_Modeling
     {
         static void Main(string[] args)
         {
-           // MongoHelper.CreateAsset(Helper.CreateBaseAsset());
-            MongoHelper.CreateSubdivisionInDb();
-//            foreach (var region in RegionFactory.GetAllRegionInfos())
-//            {
-//                Console.WriteLine($"[{region.TwoLetterISORegionName}] - {region.EnglishName}");
-//            }
-//
-//            Console.WriteLine($"Total country: {RegionFactory.GetAllRegionInfos().Count}");
+            Crawler.Crawl();
+           // MongoHelper.CreateSubdivisionInDb();
             Console.WriteLine("Done");
             Console.Read();
         }

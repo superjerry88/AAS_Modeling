@@ -19,13 +19,11 @@ namespace AASTool
 {
     public partial class IraiCreator : UserControl
     {
-        private readonly List<AssetSubdivision> subdivisions = AssetSubdivisionFactory.GenerateAssetSubdivisions();
+        private readonly List<AssetSubdivision> subdivisions = AssetSubdivisionFactory.GetAssetSubdivisions();
         public IraiCreator()
         {
             InitializeComponent();
-            
         }
-
 
         private void IraiCreator_Load(object sender, EventArgs e)
         {
@@ -43,7 +41,6 @@ namespace AASTool
                 .DistinctBy(c => c.DivisionDescription)
                 .Select(c => c.DivisionDescription)
                 .ToList();
-
         }
 
         private void cb_division_SelectedIndexChanged(object sender, EventArgs e)
@@ -56,13 +53,28 @@ namespace AASTool
                 .ToList();
         }
 
+        private void cb_group_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var selectedGroup = cb_group.SelectedItem.ToString(); ;
+            cb_item.DataSource = subdivisions
+                .Where(c => c.GroupDescription == selectedGroup)
+                .DistinctBy(c => c.ItemCodeDescription)
+                .Select(c => c.ItemCodeDescription)
+                .ToList();
+        }
+
+        private void cb_item_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
         public  BaseAsset CreateBaseAsset()
         {
             return new BaseAsset
             {
                 Irai = new Irai
                 {
-                    AssetGeoLocation = new AssetGeoLocation("country","zipcode","city","longtitude","latitude"),
+                    AssetGeoLocation = new AssetGeoLocation("country from dropdown","zipcode","city","longtitude","latitude"),
                     AssetCode = new AssetCode
                     {
                         //todo add more ...
@@ -85,5 +97,7 @@ namespace AASTool
                 BrokerMeta = new BrokerMeta()
             };
         }
+
+
     }
 }
