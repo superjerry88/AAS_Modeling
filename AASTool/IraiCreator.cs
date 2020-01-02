@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
 using System.Data;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,6 +19,8 @@ namespace AASTool
     public partial class IraiCreator : UserControl
     {
         private readonly List<AssetSubdivision> subdivisions = AssetSubdivisionFactory.GetAssetSubdivisions();
+        private readonly List<RegionInfo> regions = RegionFactory.GetAllRegionInfos();
+
         public IraiCreator()
         {
             InitializeComponent();
@@ -29,6 +32,11 @@ namespace AASTool
                 .DistinctBy(c => c.Section)
                 .Select(c => c.Section)
                 .ToList();
+            
+
+            //todo sample code to load country list
+            var countriesName = regions.OrderBy(c => c.EnglishName).Select(c => c.EnglishName).ToList();
+            comboBox1.DataSource = countriesName;
             UpdateIraiCode();
         }
 
@@ -82,11 +90,14 @@ namespace AASTool
                 .First(c => c.ItemCodeDescription == cb_item.SelectedItem.ToString() &&
                             c.DivisionDescription == cb_division.SelectedItem.ToString());
 
+            //get 3 digit ISO code from combo box
+            var country = regions.First(c=> c.EnglishName == comboBox1.SelectedItem.ToString()).TwoLetterISORegionName;
+
             return new BaseAsset
             {
                 Irai = new Irai
                 {
-                    AssetGeoLocation = new AssetGeoLocation("MY","11111","city","longtitude","latitude"),
+                    AssetGeoLocation = new AssetGeoLocation(country,"11111","city","longtitude","latitude"),
                     AssetCode = new AssetCode
                     {
                         //todo add more ...

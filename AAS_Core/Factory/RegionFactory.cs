@@ -5,7 +5,7 @@ using MoreLinq;
 
 namespace AAS_Core.Factory
 {
-    class RegionFactory
+    public class RegionFactory
     {
         public static List<RegionInfo> GetAllRegionInfos()
         {
