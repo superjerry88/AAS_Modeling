@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.IO;
 using AAS_Core.Model.Identifier;
 using AAS_Resource;
 using MongoDB.Bson;
@@ -14,7 +15,8 @@ namespace AAS_Core.Factory
         {
             if (assetSubdivisions.Count == 0)
             {
-                text = Downloader.GetMISC();
+                //text = Downloader.GetMISC();want
+                text = File.ReadAllText("Data/Latest/MISC.json");
                 assetSubdivisions = JsonConvert.DeserializeObject<List<AssetSubdivision>>(text);
             }
             return assetSubdivisions;

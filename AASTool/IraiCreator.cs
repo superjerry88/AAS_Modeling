@@ -21,6 +21,8 @@ namespace AASTool
         private readonly List<AssetSubdivision> subdivisions = AssetSubdivisionFactory.GetAssetSubdivisions();
         private readonly List<RegionInfo> regions = RegionFactory.GetAllRegionInfos();
 
+        public static object irai { get; internal set; }
+
         public IraiCreator()
         {
             InitializeComponent();
@@ -91,16 +93,16 @@ namespace AASTool
                             c.DivisionDescription == cb_division.SelectedItem.ToString());
 
             //get 3 digit ISO code from combo box
-            var country = regions.First(c=> c.EnglishName == comboBox1.SelectedItem.ToString()).TwoLetterISORegionName;
+           // var country = regions.First(c=> c.EnglishName == comboBox1.SelectedItem.ToString()).TwoLetterISORegionName;
 
             return new BaseAsset
             {
                 Irai = new Irai
                 {
-                    AssetGeoLocation = new AssetGeoLocation(country,"11111","city","longtitude","latitude"),
+                    AssetGeoLocation = new AssetGeoLocation("MY","11111","city","longtitude","latitude"),
                     AssetCode = new AssetCode
                     {
-                        //todo add more ...
+                       
                     },
                     AssetOrganization = new AssetOrganization
                     {
@@ -110,6 +112,8 @@ namespace AASTool
                     {
                         //todo add more ...
                     },
+                    Owner = new AssetOwner(),
+
                     Subdivision = selectedAssetSubdivision
                     //todo add more ...
                 },
@@ -122,6 +126,9 @@ namespace AASTool
             };
         }
 
-       
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            MainForm.ChangeScreen(new RegisterNewCompany());
+        }
     }
 }
