@@ -90,6 +90,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CompanyDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CompanyDetails.Designer.cs">
+      <DependentUpon>CompanyDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="IraiCreator.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -116,6 +122,9 @@
     <Compile Include="RegisterNewCompany.Designer.cs">
       <DependentUpon>RegisterNewCompany.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CompanyDetails.resx">
+      <DependentUpon>CompanyDetails.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="IraiCreator.resx">
       <DependentUpon>IraiCreator.cs</DependentUpon>
     </EmbeddedResource>

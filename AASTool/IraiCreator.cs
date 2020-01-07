@@ -128,7 +128,7 @@ namespace AASTool
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            MainForm.ChangeScreen(new RegisterNewCompany());
+            MainForm.ChangeScreen(new CompanyDetails(this));
         }
     }
 }
