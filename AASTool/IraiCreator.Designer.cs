@@ -31,7 +31,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lbl_Irai = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cb_organisation = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.cb_section = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
@@ -86,13 +86,13 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Organization:";
             // 
-            // comboBox1
+            // cb_organisation
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(116, 57);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(237, 21);
-            this.comboBox1.TabIndex = 4;
+            this.cb_organisation.FormattingEnabled = true;
+            this.cb_organisation.Location = new System.Drawing.Point(116, 57);
+            this.cb_organisation.Name = "cb_organisation";
+            this.cb_organisation.Size = new System.Drawing.Size(237, 21);
+            this.cb_organisation.TabIndex = 4;
             // 
             // label3
             // 
@@ -323,7 +323,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.cb_section);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cb_organisation);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lbl_Irai);
             this.Controls.Add(this.label2);
@@ -340,7 +340,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lbl_Irai;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cb_organisation;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cb_section;
         private System.Windows.Forms.ComboBox comboBox3;

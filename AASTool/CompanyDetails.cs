@@ -16,7 +16,6 @@ namespace AASTool
     public partial class CompanyDetails : UserControl
     {
         private UserControl backControl;
-        private List<AssetOrganization> organization;
 
         public CompanyDetails(UserControl uc)
         {
@@ -57,15 +56,16 @@ namespace AASTool
         private void btn_add_Click(object sender, EventArgs e)
         {
            var member = CheckOnline(txt_username.Text, txt_password.Text);
-           if (member.Id == Guid.Empty)
+           if (member == null || member.Id == Guid.Empty)
            {
                MessageBox.Show("Invalid Account, please try again");
                return;
            }
 
+           Global.Organizations.Clear();
            foreach (var company in member.Company)
            {
-               organization.Add(new AssetOrganization
+               Global.Organizations.Add(new AssetOrganization
                {
                    IraiCode = company.OrganizationCode,
                    Name = company.OrganizationName,
@@ -78,6 +78,19 @@ namespace AASTool
                });
            }
 
+           lst_organisation.DataSource = Global.Organizations;
+           lst_organisation.DisplayMember = "Name";
+           IraiCreator.UpdateDisplay();
+        }
+
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            MainForm.ChangeScreen(backControl);
+        }
+
+        private void url_register_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://159.138.83.111/");
         }
     }
 }

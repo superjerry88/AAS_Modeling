@@ -96,6 +96,7 @@
     <Compile Include="CompanyDetails.Designer.cs">
       <DependentUpon>CompanyDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="Global.cs" />
     <Compile Include="IraiCreator.cs">
       <SubType>UserControl</SubType>
     </Compile>

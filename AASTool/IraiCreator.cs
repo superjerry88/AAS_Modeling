@@ -5,6 +5,7 @@ using System.Drawing;
 using System.Data;
 using System.Globalization;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -23,9 +24,19 @@ namespace AASTool
 
         public static object irai { get; internal set; }
 
+        private static IraiCreator Instance;
+
         public IraiCreator()
         {
             InitializeComponent();
+            Instance = this;
+        }
+
+        public static void UpdateDisplay()
+        {
+            var companies = Global.Organizations.Select(c => c.Name).ToList();
+            Instance.cb_organisation.DataSource = companies;
+            Instance.UpdateIraiCode();
         }
 
         private void IraiCreator_Load(object sender, EventArgs e)
@@ -37,8 +48,10 @@ namespace AASTool
             
 
             //todo sample code to load country list
-            var countriesName = regions.OrderBy(c => c.EnglishName).Select(c => c.EnglishName).ToList();
-            comboBox1.DataSource = countriesName;
+//            var countriesName = regions.OrderBy(c => c.EnglishName).Select(c => c.EnglishName).ToList();
+//            comboBox1.DataSource = countriesName;
+            cb_organisation.DataSource = Global.Organizations;
+            cb_organisation.DisplayMember = "Name";
             UpdateIraiCode();
         }
 

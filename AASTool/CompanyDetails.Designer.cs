@@ -43,7 +43,7 @@
             this.lst_organisation = new System.Windows.Forms.ListBox();
             this.btn_remove = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_back = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txt_username
@@ -142,6 +142,7 @@
             this.url_register.TabIndex = 35;
             this.url_register.TabStop = true;
             this.url_register.Text = "www.iasa.com";
+            this.url_register.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.url_register_LinkClicked);
             // 
             // label6
             // 
@@ -178,20 +179,21 @@
             this.label8.Size = new System.Drawing.Size(402, 2);
             this.label8.TabIndex = 39;
             // 
-            // button1
+            // btn_back
             // 
-            this.button1.Location = new System.Drawing.Point(30, 372);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(108, 25);
-            this.button1.TabIndex = 41;
-            this.button1.Text = "Cancel";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_back.Location = new System.Drawing.Point(30, 372);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(108, 25);
+            this.btn_back.TabIndex = 41;
+            this.btn_back.Text = "Cancel";
+            this.btn_back.UseVisualStyleBackColor = true;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
             // CompanyDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_back);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btn_remove);
             this.Controls.Add(this.lst_organisation);
@@ -231,6 +233,6 @@
         private System.Windows.Forms.ListBox lst_organisation;
         private System.Windows.Forms.Button btn_remove;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_back;
     }
 }
